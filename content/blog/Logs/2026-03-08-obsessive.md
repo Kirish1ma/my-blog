@@ -1,10 +1,10 @@
 ---
-
 title: 偏执
 author: Hatsumi
 date: 2026-03-08
 description: obsessive,Paranoia
 tags:
+---
 
 <style>
 	.backdrop_left {
