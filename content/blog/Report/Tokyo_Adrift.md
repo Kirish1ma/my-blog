@@ -4,7 +4,7 @@ author:
 date: 2026-03-19
 description: 译者留 这篇杂志大概是通过描写日本相扑与民族认同来映射极右翼政权与日本移民问题,挺有深度的,就是可能有点以城市为中心,还有点缺乏论证.个人拙见
 tags:
-    - Report
+  - Report
 ---
 
 > _Special Statement: This translated article is excluded from the CC BY-NC-SA 4.0 license stated in this blog’s footer. All rights in the original work remain with the original copyright holder._  
@@ -34,8 +34,7 @@ tags:
       </p>
       <label for="">Original Work:</label>
       <p>
-        This article is translated from “[Tokyo Adrift](https://harpers.org/2026/03/joshua-hunt-matthew-sherrill-sumo-tokyo-sanseito-demographic-change-tokyo-national-sport/)” by [**Matthew Sherrill**](https://harpers.org/author/matthewsherrill/), [**Joshua Hunt**](https://harpers.org/author/joshuahunt/). Copyright in the original text remains with the
-        original copyright holder.
+        This article is translated from “<a href="https://harpers.org/2026/03/joshua-hunt-matthew-sherrill-sumo-tokyo-sanseito-demographic-change-tokyo-national-sport/">Tokyo Adrift</a>” by <a href="(https://harpers.org/author/matthewsherrill/">[Matthew Sherrill]</a>. Copyright in the original text remains with the original copyright holder.
       </p>
       <label for="">Translation Information:</label>
       <p>
@@ -72,4 +71,4 @@ tags:
 
 [^4]: 中文为"阪神甲子园球场", 是日本高中棒球全国大赛的举办地
 
-[^5]: **神道**（日语：神道／しんとう，罗马化：Shintō）汉语圈又称**神道教**，是原生于[日本](https://zh.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC '日本')[大和民族](https://zh.wikipedia.org/wiki/%E5%A4%A7%E5%92%8C%E6%B0%91%E6%97%8F '大和民族')的[民族宗教](https://zh.wikipedia.org/wiki/%E6%B0%91%E6%97%8F%E5%AE%97%E6%95%99 '民族宗教')，奠基于日本自古以来的[民间信仰](https://zh.wikipedia.org/wiki/%E6%B0%91%E9%96%93%E4%BF%A1%E4%BB%B0 '民间信仰')与[自然崇拜](https://zh.wikipedia.org/wiki/%E8%87%AA%E7%84%B6%E5%B4%87%E6%8B%9C '自然崇拜')，[神道教 - Zh-Wikipedia](https://zh.wikipedia.org/wiki/神道)
+[^5]: **神道**（日语：神道／しんとう，罗马化：Shintō）汉语圈又称**神道教**，是原生于[日本](https://zh.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC "日本")[大和民族](https://zh.wikipedia.org/wiki/%E5%A4%A7%E5%92%8C%E6%B0%91%E6%97%8F "大和民族")的[民族宗教](https://zh.wikipedia.org/wiki/%E6%B0%91%E6%97%8F%E5%AE%97%E6%95%99 "民族宗教")，奠基于日本自古以来的[民间信仰](https://zh.wikipedia.org/wiki/%E6%B0%91%E9%96%93%E4%BF%A1%E4%BB%B0 "民间信仰")与[自然崇拜](https://zh.wikipedia.org/wiki/%E8%87%AA%E7%84%B6%E5%B4%87%E6%8B%9C "自然崇拜")，[神道教 - Zh-Wikipedia](https://zh.wikipedia.org/wiki/神道)
