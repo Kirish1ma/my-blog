@@ -5,7 +5,7 @@ date: 2025-11-30
 # updated:
 description: 日本首相岸田文雄在 2023 年日本國會開幕式上發表政策演說,宣布日本正因人口危機而處於無法維持基礎社會功能的邊緣.日本社會的年齡中位數為 49 歲,位居世界第二.
 tags:
-  - Report
+    - Report
 ---
 
 _Special Statement: This translated article is excluded from the CC BY-NC-SA 4.0 license stated in this blog’s footer. All rights in the original work remain with the original copyright holder._  
