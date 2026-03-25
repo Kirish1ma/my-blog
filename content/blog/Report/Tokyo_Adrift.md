@@ -4,8 +4,12 @@ author:
 date: 2026-03-19
 description: 译者留 这篇杂志大概是通过描写日本相扑与民族认同来映射极右翼政权与日本移民问题,挺有深度的,就是可能有点以城市为中心,还有点缺乏论证.个人拙见
 tags:
-  - Report
+    - Report
 ---
+
+未完成,未经润色.
+未完成,未经润色.
+未完成,未经润色.
 
 > _Special Statement: This translated article is excluded from the CC BY-NC-SA 4.0 license stated in this blog’s footer. All rights in the original work remain with the original copyright holder._  
 > _特别说明:本文为翻译作品,不适用本站页脚所声明的 CC BY-NC-SA 4.0 知识共享协议,原文相关权利归原版权方所有._
@@ -18,7 +22,9 @@ tags:
 
 **Matthew Sherrill**: 你对相扑探索的核心是它作为日本 "国家运动" 的地位,考虑到 — 棒球,"美国这一休闲活动"[^3] — 在日本相当受欢迎,这一点颇值得玩味.然而相扑似乎下日本人的身份认同中占有更为核心与深刻的地位.你会怎么描述相扑在当代日本文化中发挥的作用?
 
-**Joshua Hunt**: 在日本,棒球的确拥有比相扑更加广泛的收视率.尤其是举行在 Koshien[^4] 的全国高中锦标赛时.每当冠军赛开赛,几乎不可能遇到路过一台没有打开.播放节目的电视机或收音机.但相扑所承载的东西要深得多,我想即使是那些更喜欢棒球的人,也更倾向于同意这一观点.因为它具有明显的日本文化,它的根源 "Shinto religious[^5]" 可以追溯到几千年前,在数百年来,它逐渐从仪式演变成了更像是艺术与武术,现在已经证明它有着很强的时代适应性.
+**Joshua Hunt**: 在日本,棒球的确拥有比相扑更加广泛的收视率.尤其是举行在 Koshien[^4] 的全国高中锦标赛时.每当冠军赛开赛,几乎不可能遇到路过一台没有打开.播放节目的电视机或收音机.但相扑所承载的东西要深得多,我想即使是那些更喜欢棒球的人,也更倾向于同意这一观点.因为它具有明显的日本文化,它的根源 "Shinto religious[^5]" 可以追溯到几千年前,在数百年来,它逐渐从仪式演变成了更像是艺术与武术,现在已经证明它有着很强的时代适应性.解释为什么当代日本最狂热的相扑迷为何与国家运动紧密联系的基本方式是: 当代很少有仪式,不仅仅在日本,在世界任何地方都能像相扑一样与国家,民族的建国神话有如此直接的联系.与此同时保持如此广泛的群众吸引力.令人称奇(译者:这里脑子有些晕,翻译并不准确)
+
+**Sherrill**: (待继续)
 
 <article class="notice">
       <label for="">Copyright | Translation Notice | Special Statement</label>
@@ -71,4 +77,4 @@ tags:
 
 [^4]: 中文为"阪神甲子园球场", 是日本高中棒球全国大赛的举办地
 
-[^5]: **神道**（日语：神道／しんとう，罗马化：Shintō）汉语圈又称**神道教**，是原生于[日本](https://zh.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC "日本")[大和民族](https://zh.wikipedia.org/wiki/%E5%A4%A7%E5%92%8C%E6%B0%91%E6%97%8F "大和民族")的[民族宗教](https://zh.wikipedia.org/wiki/%E6%B0%91%E6%97%8F%E5%AE%97%E6%95%99 "民族宗教")，奠基于日本自古以来的[民间信仰](https://zh.wikipedia.org/wiki/%E6%B0%91%E9%96%93%E4%BF%A1%E4%BB%B0 "民间信仰")与[自然崇拜](https://zh.wikipedia.org/wiki/%E8%87%AA%E7%84%B6%E5%B4%87%E6%8B%9C "自然崇拜")，[神道教 - Zh-Wikipedia](https://zh.wikipedia.org/wiki/神道)
+[^5]: **神道**（日语：神道／しんとう，罗马化：Shintō）汉语圈又称**神道教**，是原生于[日本](https://zh.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC '日本')[大和民族](https://zh.wikipedia.org/wiki/%E5%A4%A7%E5%92%8C%E6%B0%91%E6%97%8F '大和民族')的[民族宗教](https://zh.wikipedia.org/wiki/%E6%B0%91%E6%97%8F%E5%AE%97%E6%95%99 '民族宗教')，奠基于日本自古以来的[民间信仰](https://zh.wikipedia.org/wiki/%E6%B0%91%E9%96%93%E4%BF%A1%E4%BB%B0 '民间信仰')与[自然崇拜](https://zh.wikipedia.org/wiki/%E8%87%AA%E7%84%B6%E5%B4%87%E6%8B%9C '自然崇拜')，[神道教 - Zh-Wikipedia](https://zh.wikipedia.org/wiki/神道)
