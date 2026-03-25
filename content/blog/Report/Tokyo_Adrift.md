@@ -54,7 +54,7 @@ tags:
         We will respond promptly and take appropriate action.
       </p>
       <label for="">Contact:</label>
-      <p>k1rishima@proton.me</p>
+      <p>mail.sycamore587@passinbox.com</p>
     </article>
 
 ---

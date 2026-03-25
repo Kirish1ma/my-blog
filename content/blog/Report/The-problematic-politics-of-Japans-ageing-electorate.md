@@ -75,7 +75,7 @@ _特别说明:本文为翻译作品,不适用本站页脚所声明的 CC BY-NC-S
         We will respond promptly and take appropriate action.
       </p>
       <label for="">Contact:</label>
-      <p>k1rishima@proton.me</p>
+      <p>mail.sycamore587@passinbox.com</p>
     </article>
 
 ---
