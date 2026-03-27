@@ -2,31 +2,51 @@ name: 11ty CI/CD
 
 on:
   push:
-    branches:
-      - main # 也可以監聽 main 分支的 push
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: 20 # 根據你本地 Node 版本選擇
+          node-version: 20
+          cache: npm
 
       - name: Install dependencies
-        run: npm install # 或 npm install
+        run: npm ci
 
-      - name: Build 11ty site
-        run: npx eleventy # 或 npm run build
+      - name: Build site
+        run: npx @11ty/eleventy
 
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages # 部署到 gh-pages 分支
-          publish_dir: ./_site # 你的 11ty 輸出目錄
+          path: ./_site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
