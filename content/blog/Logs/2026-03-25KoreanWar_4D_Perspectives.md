@@ -1,10 +1,10 @@
 ---
-title: 多重视角下的历史与主体性的延申{朝鲜战争的多维度切片)
+title: 多重视角下的历史与主体性的延申(乱起的名字)
 author: Hatsumi
 date: 2026-03-25
 description: 論清醒之責 | On Being Responsible for Awareness
 tags:
-    - Fragments
+    - logs
 ---
 
 <!--
