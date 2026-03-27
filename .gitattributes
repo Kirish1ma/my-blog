@@ -1,4 +1,1 @@
 *.md text eol=lf
-
-[alias]
-ci = commit   # git ci -m "msg" → git commit -m "msg"
