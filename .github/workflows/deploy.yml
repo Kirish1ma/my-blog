@@ -1,45 +1,60 @@
-name: GitHub Pages
+name: Build and Deploy 11ty Site
 
 on:
   push:
     branches:
-      - main # 或你要部署的分支
+      - main
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout 仓库
-      - uses: actions/checkout@v4
+      # 拉取仓库
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      # 2. 设置 Node
-      - uses: actions/setup-node@v4
+      # 设置 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: pnpm
 
-      # 3. 安装 pnpm
-      - run: npm install -g pnpm
+      # 安装 pnpm
+      - name: Install pnpm
+        run: npm install -g pnpm
 
-      # 4. 安装依赖
-      - run: pnpm install
+      # 安装项目依赖
+      - name: Install dependencies
+        run: pnpm install
 
-      # 5. 构建站点（11ty）
-      - run: pnpm exec @11ty/eleventy
+      # 构建 11ty 静态站点
+      - name: Build site
+        run: pnpm exec @11ty/eleventy
 
-      # 6. 上传构建产物到 GitHub Pages
-      - name: Upload artifact
+      # 上传生成的 _site 目录供部署
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
 
-      # 7. 部署 Pages
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
