@@ -23,16 +23,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 设置 Node.js 环境
+      # 设置 Node.js 环境并自动安装 pnpm
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: pnpm
-
-      # 安装 pnpm
-      - name: Install pnpm
-        run: npm install -g pnpm
 
       # 安装项目依赖
       - name: Install dependencies
@@ -40,7 +36,7 @@ jobs:
 
       # 构建 11ty 静态站点
       - name: Build site
-        run: pnpm exec @11ty/eleventy
+        run: pnpm run build
 
       # 上传生成的 _site 目录供部署
       - name: Upload Pages artifact
