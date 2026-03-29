@@ -2,10 +2,9 @@
 title: 札记 2026-02-20 有關自我同一性的簡短個人想法
 author: Hatsumi
 date: 2026-02-20
-# updated:
 description: 論清醒之責 | On Being Responsible for Awareness
 tags:
-    - Fragments
+    - Reflexion
 ---
 
 <!--

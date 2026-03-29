@@ -4,7 +4,7 @@ author: Hatsumi
 date: 2026-03-25
 description: 論清醒之責 | On Being Responsible for Awareness
 tags:
-    - logs
+    - Reflexion
 ---
 
 <!--

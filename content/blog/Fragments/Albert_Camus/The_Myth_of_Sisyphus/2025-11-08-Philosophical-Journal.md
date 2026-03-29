@@ -2,10 +2,11 @@
 title: 札记 2025-11-08
 author: Hatsumi
 date: 2025-11-08
-# updated:
 description:
 tags:
     - Fragments
+    - Albert_Camus
+    - Edmund_Husserl
 ---
 
 <!--
