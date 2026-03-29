@@ -6,6 +6,25 @@ permalink: /about/
 
 # About Me
 
+## contact US
+
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xwvwlojp"
+  method="POST"
+  enctype="multipart/form-data"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your file:
+    <input type="file" name="upload">
+  </label>
+  <button type="submit">Send</button>
+</form>
+
 ## 一些碎碎念
 
 在此記錄我的長文閲讀,謝謝
