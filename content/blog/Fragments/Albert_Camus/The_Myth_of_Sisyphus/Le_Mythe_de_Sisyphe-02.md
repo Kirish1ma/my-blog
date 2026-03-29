@@ -1,5 +1,5 @@
 ---
-title: 札记 2026-02-07 Le Mythe de Sisyphe
+title: Le Mythe de Sisyphe 02
 author: Hatsumi
 date: 2026-02-07
 description: 加缪对于胡塞尔的局部总结

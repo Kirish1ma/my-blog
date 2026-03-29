@@ -4,7 +4,7 @@ author: Hatsumi
 date: 2025-11-05
 description: Just someone's day
 tags:
-    - logs
+    - Logs
 ---
 
 你知不知道,对于人的感官体验而言,橘子是一种在腐烂与新鲜基本没有中间状态的水果,表皮看起来还完好,里面可能已经塌陷出一片苦水——表面上完美无缺,内部可能早就发酸.

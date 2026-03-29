@@ -1,5 +1,5 @@
 ---
-title: 札记 2025-11-08
+title: Le Mythe de Sisyphe 01
 author: Hatsumi
 date: 2025-11-08
 description:
