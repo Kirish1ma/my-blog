@@ -1,5 +1,5 @@
 ---
-title: 日记 2026-02-24-内在父母与失效的模型
+title: 内在父母与失效的模型
 author: Hatsumi
 date: 2026-02-26
 description: 内在父母与失效的模型 The Internal Parent and the Model That No Longer Works

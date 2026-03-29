@@ -1,5 +1,5 @@
 ---
-title: 札记 2026-02-03 Sword0fDamocles
+title: Sword0fDamocles
 author: Hatsumi
 date: 2026-02-03
 description: 論清醒之責 | On Being Responsible for Awareness

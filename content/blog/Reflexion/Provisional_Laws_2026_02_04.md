@@ -1,5 +1,5 @@
 ---
-title: Provisional Laws. 2026-02-04
+title: Provisional Laws.
 author: Hatsumi
 date: 2026-02-04
 description: 論清醒之責 | On Being Responsible for Awareness
