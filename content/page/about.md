@@ -20,9 +20,11 @@ permalink: /about/
   </label>
   <label>
     Your file:
-    <input type="file" name="upload">
+    <input type="file" name="upload" style="padding: 0.6rem 1.2rem; font-size: 1rem; height: auto;">
   </label>
-  <button type="submit">Send</button>
+   <!-- honeypot 隐藏字段 -->
+  <input type="text" name="_gotcha" style="display:none">
+  <button type="submit" style="padding: 0.6rem 1.2rem; font-size: 1rem; height: auto;">Send</button>
 </form>
 
 ## 一些碎碎念
