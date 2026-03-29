@@ -12,19 +12,19 @@ permalink: /about/
 <form
   action="https://formspree.io/f/xwvwlojp"
   method="POST"
-  enctype="multipart/form-data"
 >
   <label>
     Your email:
     <input type="email" name="email">
   </label>
   <label>
-    Your file:
-    <input type="file" name="upload" style="padding: 0.6rem 1.2rem; font-size: 1rem; height: auto;">
+    Your message:
+    <textarea name="message"></textarea>
   </label>
-   <!-- honeypot 隐藏字段 -->
+     <!-- honeypot 隐藏字段 -->
   <input type="text" name="_gotcha" style="display:none">
-  <button type="submit" style="padding: 0.6rem 1.2rem; font-size: 1rem; height: auto;">Send</button>
+  <!-- your other form fields go here -->
+  <button type="submit" style="padding: 0.6rem 1.2rem; font-size: 1rem; height: auto;>Send</button>
 </form>
 
 ## 一些碎碎念
