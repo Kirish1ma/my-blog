@@ -4,7 +4,7 @@ description:
 layout: post.njk
 ---
 
-<style>
+{# <style>
   .core-tag {
     font-size: 1.4em;
     font-weight: 600;
@@ -20,7 +20,7 @@ layout: post.njk
 <ul>
   <li><a href="/tags/logs/" class="core-tag">Logs</a></li>
   <li><a href="/tags/fragments/" class="core-tag">Fragments</a></li>
-  <li><a href="/tags/novels/" class="core-tag">Novels</a></li>
+  <li><a href="/tags/novels/" class="core-tag">Novels</a></li> #}
 
 {% for tag in collections | getKeys | filterTagList %}
   {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
