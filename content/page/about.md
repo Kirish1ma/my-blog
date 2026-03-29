@@ -24,7 +24,7 @@ permalink: /about/
      <!-- honeypot 隐藏字段 -->
   <input type="text" name="_gotcha" style="display:none">
   <!-- your other form fields go here -->
-  <button type="submit" style="padding: 0.6rem 1.2rem; font-size: 1rem; height: auto;>Send</button>
+  <button type="submit" style="padding: 0.6rem 1.2rem; font-size: 1rem; height: auto;">Send</button>
 </form>
 
 ## 一些碎碎念
