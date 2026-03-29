@@ -27,6 +27,9 @@ permalink: /about/
   <button type="submit" style="padding: 0.6rem 1.2rem; font-size: 1rem; height: auto;">Send</button>
 </form>
 
+或直接聯係我.由於不好直接回信.我只能看到.
+<a href="mailto:mail.sycamore587@passinbox.com" style="text-decoration: underline;" >Contact me(mail.sycamore587@passinbox.com)</a>
+
 ## 一些碎碎念
 
 在此記錄我的長文閲讀,謝謝

@@ -1,4 +1,4 @@
-title: "Blog"
+title: "Hatsumi's Blog"
 description: "Just Blog"
 language: "zh-cn"
 locale: en_US
@@ -7,35 +7,35 @@ favicon: /logos.png
 #url: "http://localhost:8080"
 url: "https://0t63.github.io/"
 
-metasocial: 
-#  - facebook: "https://www.facebook.com/"
-#  - twitteruser: "@username"
-#  - twitter: "https://x.com/user"
+metasocial:
+  - facebook: "https://www.facebook.com/"
+  - twitteruser: "@username"
+  - twitter: "https://x.com/user"
 
 toc_widget_title: On This Page
 
-navbar: 
- - nav: Home
-   url: /
- - nav: About
-   url: /about/
- - nav: tags
-   url: /tags/
-#  - nav: Blog
+navbar:
+  - nav: Home
+    url: /
+  - nav: About
+    url: /about/
+  - nav: tags
+    url: /tags/
+  #  - nav: Blog
   #  url: /blog/
- - nav: Search
-   url: /search/
+  - nav: Search
+    url: /search/
 
 # download:
 #  text: Download
 #  url: https://github.com/adamdjbrett/11ty-long-reads
 
-footer: 
- text1: Designed by
- text2: Adam DJ Brett
- text2_url: https://adamdjbrett.com
+footer:
+  text1: Designed by
+  text2: Adam DJ Brett
+  text2_url: https://adamdjbrett.com
 
-author: 
- name: "Hatsumi"
- email: "k1rishima@proton.me"
- url: "/about/"
+author:
+  name: "Hatsumi"
+  email: "mail.sycamore587@passinbox.com"
+  url: "/about/"
