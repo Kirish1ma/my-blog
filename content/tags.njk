@@ -4,9 +4,50 @@ description:
 layout: post.njk
 ---
 
+<!-- 手動索引 -->
+
+<ul>
+  <li>Philosophy & Thought:
+    <ul>
+      <li>Albert_Camus</li>
+      <li>Edmund_Husserl</li>
+      <li>Reflexion</li>
+    </ul>
+  </li>
+  <li>Writing & Literature:
+    <ul>
+      <li>Novels</li>
+      <li>Fragments</li>
+      <li>Logs</li>
+      <li>Report</li>
+      <li>ThreeDays</li>
+    </ul>
+  </li>
+  <li>Family & Personal:
+    <ul>
+      <li>Family</li>
+    </ul>
+  </li>
+  <li>Development & Tech:
+    <ul>
+      <li>Front-end</li>
+      <li>Back-end</li>
+      <li>DevOps</li>
+      <li>Tools</li>
+      <li>Git</li>
+      <li>Colemak</li>
+      <li>Development</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- 自動生成 -->
+
 <ul>
 {% for tag in collections | getKeys | filterTagList %}
   {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
   <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
 {% endfor %}
 </ul>
+
+
