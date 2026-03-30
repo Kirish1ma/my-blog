@@ -1,18 +1,22 @@
 ---
-title: Log 2026-03-30 18:12
+title: I’ll Start Tomorrow...
 author: Hatsumi
 date: 2026-03-30
-description: I’ll Start Tomorrow...
+description:
 tags:
     - Logs
 ---
 
-<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/song/tsumi-to-batsu-crime-and-punishment/1385305366"></iframe>
-
-好像很嚴重.我好擔心,我不想把我的負面傳染給他.我不知道该怎么安慰他,我能做的好像只有陪着他了,我想尽量不要让他觉得我烦.但是我又好担心他,我不知道该怎么办.我想我會一直等著他吧.我真的好想他.
+%% 好像很嚴重.我好擔心,我不想把我的負面傳染給他.我不知道该怎么安慰他,我能做的好像只有陪着他了,我想尽量不要让他觉得我烦.但是我又好担心他,我不知道该怎么办.我想我會一直等著他吧.我真的好想他. %%
 
 我公开地把心灵献给严酷痛苦的大地，往往在神圣的夜晚许诺要忠贞地爱它，至死不渝，承受其命定的沉重负担，一无所惧，决不蔑视它的任何一个谜。这样一种致死的纽带把我和它联结在一起。
 
 現在只是覺得好睏.準備夜自習后回到家就睡下了.我只觉得心智负担好沉重,安慰一个人在以前对我来说很容易.但是现在,我觉得好累.我只是很容易多想.我安静一会.
 
 一会见
+
+22:18
+
+今天跟我妈闹矛盾.或者只是我单方面不理她.我之前说过.我只是,释怀.不想再追究.我没有原谅她,他们.all of them,我觉得我还没有.我不想跟她说话,我.闹这样,我好矛盾.我真的不知道做什么.就像24年一样.我好想抛下一切我真的好想像他们一样抛下一切.我好想跑掉.为什么他们能做到?往深处想想,最后终归果然应该是我的问题.我的自尊.恶心,毫无用处的自尊心和羞耻心.
+
+我真想把自己关在自己的房间.每次到凌晨.我想要睡觉时.都需要和床交换一些东西.可以是情绪,也可以是别的什么.现在转念一想,这实在不是什么过分的事情.它只是想和我分享日常的事情.但是我却在怀疑它到底想从我这拿走什么东西,我可能实在是自私.床只是想帮我分担一些什么.但我在床上总是开始猜忌.我在睡袋把自己悬浮在地板上.这样我就不用担心床会对我做些什么.我能很容易记起来我房间里面所有东西的位置.我费了好大力气.镜子旁边的药盒里面的药丸里面的药粉里面的东西是什么
