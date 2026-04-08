@@ -12,7 +12,7 @@ permalink: /blog/me/hatsumi/
 
 #### 我的部分笔名
 
-目前我或許正在用的筆名: `Hatsumi` `Reiko` `kirishima` `aoi` 排名並不分前後.
+目前我或許正在用的筆名: `Hatsumi` `Reiko` `kirishima` 排名並不分前後.
 
 於此,記錄我的思考碎片,旨于我以後回顧.批判我當時的想法
 

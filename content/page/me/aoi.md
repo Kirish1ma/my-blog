@@ -1,12 +1,12 @@
 ---
-title: 葵的個人介紹
-author: Kui
+title: 葵(Aoi)的個人介紹
+author: Aoi
 date: 1849-10-07
 description: 另外一個作家
-permalink: /blog/me/kui/
+permalink: /blog/me/aoi/
 ---
 
-**Kui** - 20260408，加入到這個Blog的創作中。
+**Aoi** - 20260408，加入到這個Blog的創作中。
 
 #### 簡單的介紹
 
