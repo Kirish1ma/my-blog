@@ -9,8 +9,15 @@ layout: base.njk
 <header class="text-center mb-5">
 <h1 class="display-4 header-title">{{title}}</h1>
 <h2 class="lead">{{description}}</h2>
-{% if author %}
-<p>By <a href="{{metadata.author.url}}">{{metadata.author.name}}</a> <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>{% endif %}
+{# ai #}
+{% if author is defined %}
+{% set displayAuthor = (author or "") | trim %}
+{% else %}
+{% set displayAuthor = metadata.author.name %}
+{% endif %}
+{% if displayAuthor %}
+<p>By <a href="{{metadata.author.url}}">{{ displayAuthor }}</a> <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>{% endif %}
+{# ai #}
 <p class="small mb-5"><small>{%- for tag in tags | filterTagList %}{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}<a href="{{ tagUrl }}">{{ tag }}</a>{%- if not loop.last %}, {% endif %} {% endfor %}</small></p>
 </header>
 <article class="mb-5">
