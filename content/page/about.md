@@ -10,6 +10,7 @@ permalink: /about/
 
 <!-- modify this form HTML and place wherever you want your form -->
 <form
+  class="contact-form"
   action="https://formspree.io/f/xwvwlojp"
   method="POST"
 >
@@ -53,8 +54,17 @@ permalink: /about/
 
 Actually,每个人都有一些爱好,可以是看书,也可以是别的.硬要说的话.我并不相信记忆,所以我选择把阅读留下来.我并不相信直觉,所以我拆解论证结构.
 
-# 友鏈 / Link
+<h1 class="friend-links-title">友鏈 / Link</h1>
+<div class="friend-links">
+  <a href="https://kirish1ma.github.io/">一個奇怪的「後現代」網站(廢棄)</a>
+  <a href="https://dontalk.org/">Dontalk - 緘默</a>
+</div>
 
-[一個奇怪的後現代網站(廢棄)](https://kirish1ma.github.io/)
-[本站的RSS feed](https://0t63.github.io/feed/feed.xml)
-[dontalk](https://dontalk.org/)
+<h1 class="rss-title">RSS 訂閱</h1>
+<div class="rss-highlight">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Feed-icon.svg" alt="RSS Icon" width="28" height="28">
+	<div>
+		<strong>訂閱本站 RSS</strong>
+		<a class="rss-link" href="https://0t63.github.io/feed/feed.xml">https://0t63.github.io/feed/feed.xml</a>
+	</div>
+</div>
