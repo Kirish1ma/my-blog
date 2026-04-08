@@ -2,11 +2,13 @@
 title: On Being Responsible for Awareness
 description: 論清醒之責
 permalink: /about/
+author: Hatsumi&Aoi
 ---
 
 # 公開共同聲明
 
-（此處預留：放置本站對外公開、可共同遵守的聲明與基本立場。）
+本博客由 Hatsumi&Aoi 共同維護,默認采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed) 協議.
+但若內容涉及政治,宗教,翻譯學習作品等敏感話題,則屬於未授權内容,請勿轉載.參見 [未授權内容聲明](/notice/).將會在文章中醒目,具體說明.
 
 ---
 
@@ -51,9 +53,9 @@ permalink: /about/
     </a>
   </div>
   <div class="col-12 col-md-6">
-    <a class="card h-100 text-decoration-none" href="/blog/me/kui/">
+    <a class="card h-100 text-decoration-none" href="/blog/me/aoi/">
       <div class="card-body">
-        <h3 class="card-title">Kui</h3>
+        <h3 class="card-title">Aoi</h3>
         <p class="card-text">CSS交给我好了，我前端大神来的，保证保证搞砸任务 XDDD</p>
       </div>
     </a>
