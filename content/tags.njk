@@ -4,10 +4,6 @@ description:
 layout: post.njk
 ---
 
----
-
-<!-- 自動生成 -->
-
 <ul>
 	{% for tag in collections | getKeys | filterTagList %} {% set tagUrl
 	%}/tags/{{ tag | slugify }}/{% endset %}
