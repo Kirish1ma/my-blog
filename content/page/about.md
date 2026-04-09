@@ -8,7 +8,7 @@ author: Hatsumi&Aoi
 # 公開共同聲明
 
 本博客由 Hatsumi&Aoi 共同維護,默認采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed) 協議.
-但若內容涉及政治,宗教,翻譯學習作品等敏感話題,則屬於未授權内容,請勿轉載.參見 [[未授權内容聲明]](/notice/).將會在文章中醒目,具體說明.
+但若內容涉及政治,宗教,翻譯學習作品等敏感話題,則屬於未授權内容,請勿轉載.參見 [[未授權内容聲明]](/notice/).將會在文章中醒目,具體的說明.
 
 ---
 
@@ -56,7 +56,7 @@ author: Hatsumi&Aoi
     <a class="card h-100 text-decoration-none" href="/blog/me/aoi/">
       <div class="card-body">
         <h3 class="card-title">Aoi</h3>
-        <p class="card-text">生活好有趣aaaa(歡快死宅音)</p>
+        <p class="card-text">生活好有趣aaaa(歡快死宅音) PS:有趣在哪</p>
       </div>
     </a>
   </div>
