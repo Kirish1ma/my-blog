@@ -502,12 +502,13 @@ pre code {
 	color: #000;
 }
 
-/* 友情Link */
-.friend-links-title {
+/* 連結區域標題 */
+.link-section-title {
 	margin: 1em 0 0 0;
 }
 
-.friend-links {
+.link-section-title + .link-stack,
+.link-stack {
 	color: #0f0f0f;
 	display: flex;
 	flex-direction: column;
@@ -515,7 +516,8 @@ pre code {
 	margin: 0.5rem 0 1rem;
 }
 
-.friend-links a {
+.link-stack a,
+.link-pill {
 	display: inline-block;
 	padding: 0.25rem 0.5rem;
 	border: 1px solid #c0c0c0;
@@ -527,7 +529,8 @@ pre code {
 	transition: background-color 0.15s ease;
 }
 
-.friend-links a:hover {
+.link-stack a:hover,
+.link-pill:hover {
 	background-color: #e4e4e4;
 }
 
@@ -553,6 +556,35 @@ pre code {
 	font-size: 0.95rem;
 	color: #0f0f0f;
 	word-break: break-all;
+}
+
+.img-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin: 1rem 0 1.5rem;
+}
+
+.img-photo {
+	margin: 0 auto 1.5rem;
+	max-width: 460px;
+	padding: 1rem;
+	border: 1px solid #cfcfcf;
+	border-radius: 6px;
+	background-color: #fafafa;
+	text-align: center;
+}
+
+.img-photo img {
+	max-width: 100%;
+	border-radius: 4px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.img-photo__caption {
+	margin-top: 0.6rem;
+	font-size: 0.9rem;
+	color: #555;
 }
 
 .site-footer {

@@ -3,3 +3,30 @@
 + Adam DJ brett
 + [https://adamdjbrett.com](https://adamdjbrett.com)
 + [info@adamdjbrett.com](mailto:info@adamdjbrett.com)
+
+---
+
+# 標籤封裝
+
+## IMG標籤
+範例
+```html
+<div class="img-photo">
+	<img src="https://i.postimg.cc/2Sq5dLvJ/IMG-2943.jpg" alt="IMG-2943.JPG" loading="lazy">
+	<p class="img-photo__caption">拍於月光最柔和的夜晚 · 以此紀念我與小鎮</p>
+</div>
+```
+
+使用 `img-photo` 類別來包裝圖片方塊，使用 `img-photo__caption` 類別來包裝圖片底部標題。
+
+## A標籤
+範例
+```html
+<h1 class="link-section-title">友鏈 / Link</h1>
+<div class="link-stack">
+  <a href="https://kirish1ma.github.io/">一個奇怪的「後現代」網站(廢棄)</a>
+  <a href="https://dontalk.org/">Dontalk - 緘默</a>
+</div>
+```
+
+使用 `link-section-title` 類別來設定標題，使用 `link-stack` 類別來包裝跳轉按鈕。

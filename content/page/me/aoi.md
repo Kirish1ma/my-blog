@@ -14,7 +14,10 @@ permalink: /blog/me/aoi/
 
 我喜歡撰寫一些關於「自我」、「情愛」、「存在」的碎片化文字，記錄那些在夜深人靜時浮現的思考與感悟。我喜歡這種記錄，因為它讓我感到自由，也讓我感到真實。
 
-<img src="https://i.postimg.cc/2Sq5dLvJ/IMG-2943.jpg" alt="IMG-2943.JPG" style="text-align: center; max-width: 400px; overflow: hidden;">
+<div class="img-photo">
+	<img src="https://i.postimg.cc/2Sq5dLvJ/IMG-2943.jpg" alt="IMG-2943.JPG" loading="lazy">
+	<p class="img-photo__caption">拍於月光最柔和的夜晚 · 以此紀念我與小鎮</p>
+</div>
 
 我生活在一個月亮高懸，滿天星辰的小鎮。想像一下。月亮高懸在半空，把世界照得清亮。我喜歡走在小路上，喝著茶，一邊散步，一邊聽著不遠處竹林搖曳的聲音。我生活的小鎮裏，有一條小河，我喜歡在小河旁的草地燒烤，吹著微風，看著爬滿斷橋的夕顏花。這種生活是美好的，但是也滋生了很多孤獨的悲傷。或許我的思緒就像河畔邊隨風飄蕩的柳絮。隨物而哀。 —— **物哀**。
 
