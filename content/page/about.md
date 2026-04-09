@@ -66,8 +66,8 @@ author: Hatsumi&Aoi
 
 ## Friend Links
 
-<h1 class="friend-links-title">友鏈 / Link</h1>
-<div class="friend-links">
+<h1 class="link-section-title">友鏈 / Link</h1>
+<div class="link-stack">
   <a href="https://kirish1ma.github.io/">一個奇怪的「後現代」網站(廢棄)</a>
   <a href="https://dontalk.org/">Dontalk - 緘默</a>
 </div>
