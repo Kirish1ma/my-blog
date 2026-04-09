@@ -56,7 +56,7 @@ author: Hatsumi&Aoi
     <a class="card h-100 text-decoration-none" href="/blog/me/aoi/">
       <div class="card-body">
         <h3 class="card-title">Aoi</h3>
-        <p class="card-text">CSS交给我好了，我前端大神来的，保证保证搞砸任务 XDDD</p>
+        <p class="card-text">生活好有趣aaaa(歡快死宅音)</p>
       </div>
     </a>
   </div>
