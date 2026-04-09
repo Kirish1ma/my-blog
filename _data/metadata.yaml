@@ -26,9 +26,10 @@ navbar:
   - nav: Search
     url: /search/
 
-# download:
-#  text: Download
-#  url: https://github.com/adamdjbrett/11ty-long-reads
+download:
+  text: RSS
+  url: https://0t63.github.io/feed/feed.xml
+  # url: https://example.com/feed/feed.xml
 
 footer:
   text1: Designed by
