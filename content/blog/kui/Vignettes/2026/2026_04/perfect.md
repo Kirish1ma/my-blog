@@ -26,7 +26,7 @@ tags:
 拼命回憶想起也只剩下一片餘燼
 離開的你，已成為如今的我
 
-—— 生命裏逝去的所有人
+—— 生命裏逝去的所有人。
 
 <div class="img-photo">
   <img src="https://dontalk.org/api/media/file/findme/img_9462-jpg_94622c.jpg" alt="圓滿" loading="lazy">
