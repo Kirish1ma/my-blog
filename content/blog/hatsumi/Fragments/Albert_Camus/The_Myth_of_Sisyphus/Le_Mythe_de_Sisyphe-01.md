@@ -4,9 +4,10 @@ author: Hatsumi
 date: 2025-11-08
 description:
 tags:
-    - Fragments
-    - Albert_Camus
-    - Edmund_Husserl
+  - cat-Fragments
+  - Albert_Camus
+  - Edmund_Husserl
+  - Le_Mythe_de_Sisyphe
 ---
 
 <!--

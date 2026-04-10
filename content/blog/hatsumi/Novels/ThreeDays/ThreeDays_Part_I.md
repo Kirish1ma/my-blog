@@ -4,8 +4,8 @@ author: Hatsumi
 date: 2026-02-28
 description: The Masque of the Red Death
 tags:
-    - Novels
-    - ThreeDays
+  - cat-Novels
+  - ThreeDays
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=565816936&auto=1&height=32"></iframe>

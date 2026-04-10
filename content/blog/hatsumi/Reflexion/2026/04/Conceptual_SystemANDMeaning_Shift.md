@@ -4,10 +4,10 @@ author: Hatsumi&Aoi
 date: 2026-04-11
 description: Conceptual Systems and Semantic Drift
 tags:
-  - cat-Reflexion
-  - Concept
-  - Language
-  - Structure
+    - cat-Reflexion
+    - Concept
+    - Language
+    - Structure
 ---
 
 # 哲学家总喜欢把一个很容易讲清楚的概念浓缩成一个名词..增加学习成本
