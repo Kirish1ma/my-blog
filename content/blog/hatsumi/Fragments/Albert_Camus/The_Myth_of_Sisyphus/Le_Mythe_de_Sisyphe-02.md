@@ -4,9 +4,10 @@ author: Hatsumi
 date: 2026-02-07
 description: 加缪对于胡塞尔的局部总结
 tags:
-    - Fragments
-    - Albert_Camus
-    - Edmund_Husserl
+  - cat-Fragments
+  - Albert_Camus
+  - Edmund_Husserl
+  - Le_Mythe_de_Sisyphe
 ---
 
 <!--
