@@ -18,6 +18,10 @@ layout: base.njk
 {% if displayAuthor %}
 <p>By <a href="{{metadata.author.url}}">{{ displayAuthor }}</a> <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>{% endif %}
 {# ai #}
+{% set categories = tags | filterCategoryList %}
+{% if categories | length %}
+<p class="small mb-1"><small>{%- for categoryTag in categories %}{%- set categoryUrl %}/category/{{ categoryTag | categoryNameFromTag | slugify }}/{% endset %}<a href="{{ categoryUrl }}">{{ categoryTag | categoryNameFromTag }}</a>{%- if not loop.last %}, {% endif %} {% endfor %}</small></p>
+{% endif %}
 <p class="small mb-5"><small>{%- for tag in tags | filterTagList %}{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}<a href="{{ tagUrl }}">{{ tag }}</a>{%- if not loop.last %}, {% endif %} {% endfor %}</small></p>
 </header>
 <article class="mb-5">
