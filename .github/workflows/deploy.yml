@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - main
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+  pull_request:
+    branches:
+      - main
 
 concurrency:
   group: pages
@@ -17,6 +15,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
 
     steps:
       # 拉取仓库
@@ -38,7 +39,7 @@ jobs:
 
       # 安装项目依赖
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       # 构建 11ty 静态站点
       - name: Build site
@@ -56,6 +57,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
