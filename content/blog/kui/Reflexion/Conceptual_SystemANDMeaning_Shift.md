@@ -1,8 +1,8 @@
 ---
-title: 概念体系与意义漂移
-author: Hatsumi&Aoi
+title: 概念体系、语言门槛与意义转变 by Aoi
+author: Aoi
 date: 2026-04-11
-description: Conceptual Systems and Semantic Drift
+description: Conceptual Systems and Meaning Shift
 tags:
     - cat-Reflexion
     - Concept

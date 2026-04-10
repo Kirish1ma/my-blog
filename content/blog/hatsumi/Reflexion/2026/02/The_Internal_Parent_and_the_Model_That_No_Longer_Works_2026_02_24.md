@@ -4,7 +4,7 @@ author: Hatsumi
 date: 2026-02-26
 description: 内在父母与失效的模型 The Internal Parent and the Model That No Longer Works
 tags:
-  - cat-Reflexion
+    - cat-Reflexion
 ---
 
 小时候父亲跟我说话的印象都是很戏谑,不耐烦.于是我很害怕父亲.随后长大了之后也学会了这么说话,但我发现这貌似并不是我感受到的戏谑,他并没有那种情绪,正常说话就是如此.但我已经改不掉说话的习惯.
