@@ -1,6 +1,6 @@
 ---
 title: 概念体系与意义漂移
-author: Hatsumi
+author: Hatsumi&Aoi
 date: 2026-04-11
 description: Conceptual Systems and Semantic Drift
 tags:
