@@ -1,40 +1,32 @@
 ---
-title: 未授權内容聲明
+title: 版權與使用聲明
 permalink: /notice/
 ---
 
-<article class="notice">
-      <label for="">Copyright | Translation Notice | Special Statement</label>
-      <p>
-        The CC BY-NC-SA 4.0 license stated in this blog’s footer applies solely to original content published on this
-        site, unless otherwise specified.
-      </p>
-      <p>
-        This article is a translation and therefore constitutes a derivative work of the original text. In order to
-        respect the copyright of the original work and its rights holder, this translation is not licensed under the CC
-        BY-NC-SA 4.0 license. Any reproduction, redistribution, or adaptation of this translated text requires separate
-        permission from the relevant copyright holder(s).
-      </p>
-      <label for="">Original Work:</label>
-      <p>
-        This article is translated from “<a href="https://harpers.org/2026/03/joshua-hunt-matthew-sherrill-sumo-tokyo-sanseito-demographic-change-tokyo-national-sport/">Tokyo Adrift</a>” by <a href="(https://harpers.org/author/matthewsherrill/">[Matthew Sherrill]</a>. Copyright in the original text remains with the original copyright holder.
-      </p>
-      <label for="">Translation Information:</label>
-      <p>
-        Translated, reviewed, and published by Hatsumi. The translation intended to reflect the original author’s views
-        only. Any inaccuracies, omissions, or interpretative errors introduced in the translation are the sole
-        responsibility of the translator.
-      </p>
-      <label for="">Purpose of Publication:</label>
-      <p>
-        This translation is provided for non-commercial purposes such as personal study, academic research, and cultural
-        exchange only. This statement does not constitute a license for reuse.
-      </p>
-      <label for="">Copyright Concerns:</label>
-      <p>
-        If you believe that this translation infringes upon your rights, please contact us using the information below.
-        We will respond promptly and take appropriate action.
-      </p>
-      <label for="">Contact:</label>
-      <p>mail.sycamore587@passinbox.com</p>
-</article>
+## 版權與使用聲明
+
+本站（含其文章、頁面、版面設計與可下載資源等）之著作權與使用規範，除另有註明外，依頁尾所示之授權條款（CC BY-NC-SA 4.0）適用於本站作者所發布之「原創內容」。
+
+## 適用範圍
+
+「原創內容」通常包含：本站作者自行撰寫之文字、原創圖片/插圖、原創程式碼片段，以及本站自行整理之內容結構。若特定頁面或文章另行標示不同的授權、權利人或使用限制，則以該頁面或文章之標示為準。
+
+## 第三方內容與引用
+
+本站可能包含第三方內容（例如：引用段落、截圖、外部圖片、嵌入媒體、翻譯之原文內容等）。其著作權仍屬原權利人。該等內容不必然適用本站頁尾之 CC BY-NC-SA 4.0 授權；如需重製、散布、改作或商業使用，請逕向原權利人取得授權，或遵循原始來源所載之授權條款與法律規範。
+
+## 翻譯與改作
+
+本站可能發布翻譯、改寫、摘要或其他形式之衍生作品。除非該篇內容明確標示可再利用之授權，否則請勿將其視為取得原文作者或原權利人授權之替代。任何針對翻譯/改作內容之重製、再散布、改作或再發布，仍可能需要分別取得相關權利人之同意。
+
+## 允許的使用方式（概述）
+
+一般情況下，歡迎以「連結分享」方式轉載本站內容；亦可在合理範圍內引用並清楚標示來源連結與作者。若你希望全文轉載、批量收集、以自動化方式抓取，或將內容用於商業用途/付費內容/再授權，請先取得授權或與本站聯繫確認。
+
+## 權利主張與移除請求
+
+若你認為本站內容（包含但不限於翻譯、引用、圖片或其他素材）侵害你的權利，請來信提供：權利人身分/授權證明、涉及之頁面連結、具體主張與希望採取之處置方式。收到通知後，我們將儘速處理（包含更正標示、移除內容或補充來源資訊等）。
+
+## 聯絡方式
+
+<a href="mailto:mail.sycamore587@passinbox.com" style="text-decoration: underline;" >Contact me(mail.sycamore587@passinbox.com)</a>

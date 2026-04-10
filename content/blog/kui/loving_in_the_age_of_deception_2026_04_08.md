@@ -4,7 +4,7 @@ author: Aoi
 date: 2026-04-08
 description: In the 21st century Neil Postman warned about—a world of speed and deception—how are we still to love one another?
 tags:
-  - Reflexion
+    - Reflexion
 ---
 
 很早时，尼尔 · 波兹曼先⽣就提出了⼀个惊为天⼈的观点，也就是： “ 媒介即隐喻 ” 。 ( 这句话是波兹曼在⻨克卢汉的 “ 媒介即信息 ” 基础上进⾏修正和发展⽽提出的观点 ) 他的这句话，直接开创了⼀个新的学科派系 —— 媒介环境学派。 再者，或许⼤家都听过 “ 娱乐⾄死 ” 这个词，但如果我不说，或许你很难想象到，这个词源⾃于尼 尔 · 波兹曼先⽣在 20 世纪写的⼀本书，⽽书名就是⼤⼤的四个字 —— 《娱乐⾄死》
