@@ -22,6 +22,22 @@ export default async function (eleventyConfig) {
 			return false;
 		}
 	});
+
+	eleventyConfig.addCollection("categoryList", (collectionApi) => {
+		let categorySet = new Set();
+		for (let item of collectionApi.getAll()) {
+			let tags = item?.data?.tags;
+			if (!tags) continue;
+			if (typeof tags === "string") tags = [tags];
+			if (!Array.isArray(tags)) continue;
+			for (let tag of tags) {
+				if (typeof tag === "string" && tag.startsWith("cat-")) {
+					categorySet.add(tag);
+				}
+			}
+		}
+		return [...categorySet].sort((a, b) => a.localeCompare(b));
+	});
 	eleventyConfig
 		.addPassthroughCopy({
 			"./public/": "/",

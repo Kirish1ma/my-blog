@@ -19,6 +19,8 @@ navbar:
     url: /
   - nav: About
     url: /about/
+  - nav: categories
+    url: /categories/
   - nav: tags
     url: /tags/
   #  - nav: Blog

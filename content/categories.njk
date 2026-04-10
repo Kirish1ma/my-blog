@@ -1,0 +1,11 @@
+---
+title: Categories
+description:
+layout: post.njk
+---
+
+<ul>
+	{% for categoryKey in collections.categoryList %} {% set categoryUrl %}/category/{{ categoryKey | categoryNameFromTag | slugify }}/{% endset %}
+	<li><a href="{{ categoryUrl }}" class="post-tag">{{ categoryKey | categoryNameFromTag }}</a> ({{ collections[categoryKey] | length }})</li>
+	{% endfor %}
+</ul>
