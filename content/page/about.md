@@ -46,7 +46,7 @@ author: Hatsumi&Aoi
       <div class="card-body">
         <h3 class="card-title">Hatsumi</h3>
         <p class="card-text">生活好無聊wwww(厭世宅女音)</p>
-        <p class="card-text"><a href="https://t.me/KirishimaMana">telegram: @KirishimaMana</a>&​amp;<a href="mailto:mail.sycamore587@passinbox.com" style="text-decoration: underline;">Email me ✉</a></p>
+        <p class="card-text"><a href="https://t.me/KirishimaMana">telegram: @KirishimaMana</a> &​amp; <a href="mailto:mail.sycamore587@passinbox.com" style="text-decoration: underline;">Email me ✉</a></p>
       </div>
     </a>
   </div>
