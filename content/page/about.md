@@ -42,21 +42,26 @@ author: Hatsumi&Aoi
 
 <div class="row g-3">
   <div class="col-12 col-md-6">
-    <a class="card h-100 text-decoration-none" href="/blog/me/hatsumi/">
+    <div class="card h-100">
       <div class="card-body">
-        <h3 class="card-title">Hatsumi</h3>
+        <h3 class="card-title"><a class="text-decoration-none" href="/blog/me/hatsumi/">Hatsumi</a></h3>
         <p class="card-text">生活好無聊wwww(厭世宅女音)</p>
-        <p class="card-text"><a href="https://t.me/KirishimaMana">telegram: @KirishimaMana</a> &​amp; <a href="mailto:mail.sycamore587@passinbox.com" style="text-decoration: underline;">Email me ✉</a></p>
+        <div class="card-text">
+          <a href="https://t.me/KirishimaMana">telegram: @KirishimaMana</a>
+          &amp;
+          <a href="mailto:mail.sycamore587@passinbox.com" style="text-decoration: underline;">Email me ✉</a>
+        </div>
       </div>
-    </a>
+    </div>
   </div>
   <div class="col-12 col-md-6">
-    <a class="card h-100 text-decoration-none" href="/blog/me/aoi/">
+    <div class="card h-100">
       <div class="card-body">
-        <h3 class="card-title">Aoi</h3>
+        <h3 class="card-title"><a class="text-decoration-none" href="/blog/me/aoi/">Aoi</a></h3>
         <p class="card-text">生活好有趣aaaa(歡快死宅音) PS:有趣在哪</p>
+        <div class="card-text"></div>
       </div>
-    </a>
+    </div>
   </div>
 </div>
 
