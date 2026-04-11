@@ -8,9 +8,11 @@ favicon: /logos.png
 url: "https://0t63.github.io/"
 
 metasocial:
-  - facebook: "https://www.facebook.com/"
-  - twitteruser: "@username"
-  - twitter: "https://x.com/user"
+  # - facebook: "https://www.facebook.com/"
+  # - twitteruser: "@username"
+  # - twitter: "https://x.com/user"
+  - github_Kirish1ma: "https://github.com/Kirish1ma"
+  - telegram_Kirishima: "https://t.me/KirishimaMana"
 
 toc_widget_title: On This Page
 
@@ -37,6 +39,10 @@ footer:
   text1: Designed by
   text2: Adam DJ Brett
   text2_url: https://adamdjbrett.com
+
+license:
+  name: CC BY-NC-SA 4.0
+  url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 author:
   name: "Hatsumi"
