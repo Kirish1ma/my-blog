@@ -15,8 +15,8 @@ metasocial:
 toc_widget_title: On This Page
 
 navbar:
-  - nav: Home
-    url: /
+  # - nav: Home
+  #   url: /
   - nav: About
     url: /about/
   - nav: categories
