@@ -23,17 +23,17 @@ author: Hatsumi&Aoi
   method="POST"
 >
   <label>
-    Your email:
+    你的郵箱:
     <input type="email" name="email">
   </label>
   <label>
-    Your message:
+    你的消息:
     <textarea name="message"></textarea>
   </label>
      <!-- honeypot 隐藏字段 -->
   <input type="text" name="_gotcha" style="display:none">
   <!-- your other form fields go here -->
-  <button type="submit" style="padding: 0.6rem 1.2rem; font-size: 1rem; height: auto;">Send</button>
+  <button type="submit" style="padding: 0.6rem 1.2rem; font-size: 1rem; height: auto;">發送</button>
 </form>
 
 ---
@@ -47,9 +47,9 @@ author: Hatsumi&Aoi
         <h3 class="card-title"><a class="text-decoration-none" href="/blog/me/hatsumi/">Hatsumi</a></h3>
         <p class="card-text">生活好無聊wwww(厭世宅女音)</p>
         <div class="card-text">
-          <a href="https://t.me/KirishimaMana">telegram: @KirishimaMana</a>
+          <a href="{{metadata.metasocial.telegram_Kirishima}}">telegram: @KirishimaMana</a>
           &amp;
-          <a href="mailto:mail.sycamore587@passinbox.com" style="text-decoration: underline;">Email me ✉</a>
+          <a href="mailto:{{metadata.author.email}}">Email me ✉</a>
         </div>
       </div>
     </div>
