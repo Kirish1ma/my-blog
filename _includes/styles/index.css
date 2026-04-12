@@ -604,3 +604,322 @@ pre code {
 	font-size: 0.9rem;
 	color: #333;
 }
+
+/* Minimal audio player */
+
+
+.xp-player {
+	margin: 1.75rem 0;
+	padding: 0.9rem 1rem 0.65rem;
+	border-radius: 14px;
+	border: 1px solid #d6d6d6;
+	background: linear-gradient(180deg, #fff 0%, #f7f7f7 100%);
+	box-shadow: 0 20px 35px rgba(0, 0, 0, 0.04);
+	max-width: min(640px, 100%);
+	display: flex;
+	flex-direction: column;
+	gap: 0.65rem;
+}
+
+.xp-player__row {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.xp-player__cover {
+	flex-shrink: 0;
+	width: 60px;
+	height: 60px;
+	border-radius: 10px;
+	background: #ebebeb;
+	overflow: hidden;
+}
+
+.xp-player__cover img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.xp-player__panel {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	flex: 1;
+}
+
+.xp-player__btn {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border: 1px solid #4a4a4a;
+	background: #1c1c1c;
+	color: #f6f6f6;
+	font-size: 0.85rem;
+	cursor: pointer;
+	transition: transform 0.1s ease, background 0.15s ease;
+}
+
+.xp-player__btn:hover {
+	background: #2b2b2b;
+}
+
+.xp-player__btn:active {
+	transform: scale(0.94);
+}
+
+
+.xp-player__meta {
+	flex: 1;
+	font-family: "Helvetica Neue", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont;
+	min-width: 0;
+}
+
+
+.xp-player__title {
+	font-size: 0.95rem;
+	font-weight: 600;
+	color: #0f0f0f;
+	margin-bottom: 0.1rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+.xp-player__artist {
+	font-size: 0.83rem;
+	color: #626262;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+.xp-player__time {
+	font-variant-numeric: tabular-nums;
+	font-size: 0.83rem;
+	color: #2a2a2a;
+	display: flex;
+	gap: 0.2rem;
+	align-items: center;
+}
+
+
+.xp-player__progress {
+	width: 100%;
+	position: relative;
+	height: 4px;
+	border-radius: 99px;
+	background: #e6e6e6;
+	cursor: pointer;
+}
+
+
+.xp-player__progress-bar span {
+	display: block;
+	height: 100%;
+	width: 0;
+	border-radius: inherit;
+	background: #2b2b2b;
+	transition: width 0.1s linear;
+}
+
+.xp-player__progress:active {
+	background: #c4c4c4;
+}
+
+.xp-player__row + .xp-player__progress {
+	margin-top: 0.4rem;
+}
+
+.xp-player__lrc-toggle {
+	width: 28px;
+	height: 28px;
+	border-radius: 6px;
+	border: 1px solid #d6d6d6;
+	background: #fff;
+	color: #4a4a4a;
+	font-size: 0.8rem;
+	cursor: pointer;
+	transition: all 0.15s ease;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.xp-player__lrc-toggle:hover {
+	background: #f4f4f4;
+	border-color: #b8b8b8;
+}
+
+.xp-player__lrc-toggle:active {
+	transform: scale(0.95);
+}
+
+.xp-player[data-lyrics-visible="true"] .xp-player__lrc-toggle {
+	background: #2b2b2b;
+	color: #fff;
+	border-color: #4a4a4a;
+}
+
+.xp-player__lyrics {
+	display: none;
+	max-height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+	            opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+	            margin-top 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	border-top: 1px solid transparent;
+	border-radius: 0 0 10px 10px;
+	background: linear-gradient(180deg, #fafafa 0%, #f5f5f5 100%);
+}
+
+.xp-player[data-lyrics-visible="true"] .xp-player__lyrics {
+	display: block;
+	max-height: 320px;
+	margin-top: 0.75rem;
+	opacity: 1;
+	border-top-color: #e8e8e8;
+}
+
+.xp-player__lyrics-progress {
+	width: 100%;
+	height: 3px;
+	background: #e8e8e8;
+	border-radius: 2px;
+	position: relative;
+	cursor: pointer;
+	transition: height 0.2s ease;
+}
+
+.xp-player__lyrics-progress:hover {
+	height: 4px;
+}
+
+.xp-player__lyrics-progress-bar {
+	height: 100%;
+	width: 0;
+	background: linear-gradient(90deg, #2b2b2b 0%, #1a1a1a 100%);
+	border-radius: inherit;
+	transition: width 0.1s linear;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+.xp-player__lyrics-scroll {
+	height: 280px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding: 1.5rem 1rem 2rem;
+	scrollbar-width: thin;
+	scrollbar-color: rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.06);
+	scroll-behavior: smooth;
+}
+
+.xp-player__lyrics-scroll::-webkit-scrollbar {
+	width: 8px;
+	-webkit-appearance: none;
+}
+
+.xp-player__lyrics-scroll::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.06);
+	border-radius: 4px;
+	margin: 10px 0;
+}
+
+.xp-player__lyrics-scroll::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	transition: background 0.2s ease;
+}
+
+.xp-player__lyrics-scroll::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.35);
+}
+
+.xp-player__lyrics-content {
+	text-align: center;
+	font-family: "Helvetica Neue", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont;
+	padding: 0 1rem;
+}
+
+.xp-player__lyric-line {
+	padding: 0.55rem 1rem;
+	margin: 0.2rem 0;
+	font-size: 0.94rem;
+	color: #b0b0b0;
+	transition: color 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+	            opacity 0.35s ease,
+	            font-weight 0.25s ease;
+	cursor: pointer;
+	border-radius: 8px;
+	line-height: 1.65;
+	letter-spacing: 0.01em;
+	font-weight: 400;
+	opacity: 0.55;
+}
+
+.xp-player__lyric-line:hover {
+	background: rgba(0, 0, 0, 0.03);
+	color: #808080;
+	opacity: 0.8;
+}
+
+.xp-player__lyric-line.active {
+	color: #1a1a1a;
+	font-weight: 650;
+	opacity: 1;
+}
+
+.xp-player__lyric-line.passed {
+	color: #d0d0d0;
+	opacity: 0.38;
+}
+
+.xp-player__lyrics-loading,
+.xp-player__lyrics-error {
+	text-align: center;
+	padding: 3rem 1.5rem;
+	font-size: 0.88rem;
+	animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.xp-player__lyrics-loading {
+	color: #999;
+}
+
+.xp-player__lyrics-error {
+	color: #d44;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-8px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 599px) {
+	.xp-player__row {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.xp-player__panel {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.xp-player__progress {
+		margin-top: 0.2rem;
+	}
+}

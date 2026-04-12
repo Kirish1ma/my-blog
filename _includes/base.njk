@@ -19,6 +19,298 @@
 {{content|safe}}
 </main>
 {% include "partials/footer.njk" %}
+<script src="https://cdn.jsdelivr.net/npm/jsmediatags@3.9.7/dist/jsmediatags.min.js"></script>
+<script type="module">
+	const formatXPTime = (secs) => {
+		if (!Number.isFinite(secs)) return "--:--";
+		const minutes = Math.floor(secs / 60)
+			.toString()
+			.padStart(2, "0");
+		const seconds = Math.floor(secs % 60)
+			.toString()
+			.padStart(2, "0");
+		return `${minutes}:${seconds}`;
+	};
+
+	const bytesToBase64 = (bytes = []) => {
+		const chunkSize = 0x8000;
+		let binary = "";
+		for (let i = 0; i < bytes.length; i += chunkSize) {
+			const chunk = bytes.subarray
+				? bytes.subarray(i, i + chunkSize)
+				: bytes.slice(i, i + chunkSize);
+			binary += String.fromCharCode.apply(null, chunk);
+		}
+		return window.btoa(binary);
+	};
+
+	const ensureCoverArtwork = (player, audio) => {
+		const coverImg = player.querySelector("[data-cover-img]");
+		if (!coverImg) return;
+		const fallbackCover = player.dataset.fallbackCover || "/media/audio/no-album-art.png";
+		const coverMode = player.dataset.coverMode || "explicit";
+		const setCover = (src) => {
+			coverImg.src = src || fallbackCover;
+		};
+		coverImg.addEventListener("error", () => {
+			if (coverImg.src !== fallbackCover) {
+				setCover(fallbackCover);
+			}
+		});
+		if (coverMode !== "auto") {
+			if (!coverImg.getAttribute("src")) {
+				setCover(fallbackCover);
+			}
+			return;
+		}
+		const jsmediatags = window.jsmediatags;
+		if (!audio?.src || !jsmediatags) {
+			setCover(fallbackCover);
+			return;
+		}
+		jsmediatags.read(audio.currentSrc || audio.src, {
+			onSuccess: ({ tags }) => {
+				const picture = tags?.picture;
+				if (picture?.data?.length) {
+					try {
+						const base64 = bytesToBase64(picture.data);
+						setCover(`data:${picture.format};base64,${base64}`);
+					} catch (error) {
+						console.warn("xpPlayer cover decode failed", error);
+						setCover(fallbackCover);
+					}
+				} else {
+					setCover(fallbackCover);
+				}
+			},
+			onError: () => setCover(fallbackCover),
+		});
+	};
+
+	const parseLRC = (lrcText) => {
+		const lines = lrcText.split("\n");
+		const lyrics = [];
+		const timeRegex = /\[(\d{2}):(\d{2})\.(\d{2,3})\]/g;
+
+		lines.forEach((line) => {
+			const matches = [...line.matchAll(timeRegex)];
+			if (matches.length > 0) {
+				const text = line.replace(timeRegex, "").trim();
+				if (text) {
+					matches.forEach((match) => {
+						const minutes = parseInt(match[1], 10);
+						const seconds = parseInt(match[2], 10);
+						const milliseconds = parseInt(match[3].padEnd(3, "0"), 10);
+						const time = minutes * 60 + seconds + milliseconds / 1000;
+						lyrics.push({ time, text });
+					});
+				}
+			}
+		});
+
+		return lyrics.sort((a, b) => a.time - b.time);
+	};
+
+	const bootstrapPlayers = () => {
+		const players = document.querySelectorAll("[data-xp-player]");
+		if (!players.length) return;
+		let activeAudio = null;
+		players.forEach((player) => {
+			const audio = player.querySelector("audio");
+			const btn = player.querySelector(".xp-player__btn");
+			const icon = player.querySelector(".xp-player__icon");
+			const progress = player.querySelector(".xp-player__progress");
+			const bar = player.querySelector(".xp-player__progress-bar span");
+			const currentEl = player.querySelector(".xp-player__current");
+			const durationEl = player.querySelector(".xp-player__duration");
+			if (!audio || !btn || !icon || !progress || !bar) return;
+			ensureCoverArtwork(player, audio);
+
+			const lrcPath = player.dataset.lrc;
+			const lrcToggle = player.querySelector(".xp-player__lrc-toggle");
+			const lyricsContainer = player.querySelector("[data-lrc-container]");
+			const lyricsContent = player.querySelector(".xp-player__lyrics-content");
+			const lyricsProgress = player.querySelector(".xp-player__lyrics-progress");
+			const lyricsProgressBar = player.querySelector(".xp-player__lyrics-progress-bar");
+			let parsedLyrics = [];
+			let currentLyricIndex = -1;
+
+			if (lrcPath && lrcToggle && lyricsContainer && lyricsContent) {
+				lrcToggle.addEventListener("click", () => {
+					const isVisible = player.dataset.lyricsVisible === "true";
+					player.dataset.lyricsVisible = isVisible ? "false" : "true";
+					if (!isVisible && parsedLyrics.length === 0) {
+						lyricsContent.innerHTML = '<div class="xp-player__lyrics-loading">加载歌词中...</div>';
+						fetch(lrcPath)
+							.then((res) => res.text())
+							.then((lrcText) => {
+								parsedLyrics = parseLRC(lrcText);
+								if (parsedLyrics.length > 0) {
+									const spacer = '<div style="height: 100px;"></div>';
+									lyricsContent.innerHTML = spacer + parsedLyrics
+										.map(
+											(lyric, index) =>
+												`<div class="xp-player__lyric-line" data-time="${lyric.time}" data-index="${index}">${lyric.text}</div>`
+										)
+										.join("") + spacer;
+									const lyricLines = lyricsContent.querySelectorAll(".xp-player__lyric-line");
+									lyricLines.forEach((line) => {
+										line.addEventListener("click", () => {
+											const time = parseFloat(line.dataset.time);
+											audio.currentTime = time;
+											if (audio.paused) {
+												audio.play();
+											}
+										});
+									});
+								} else {
+									lyricsContent.innerHTML = '<div class="xp-player__lyrics-error">歌词格式错误</div>';
+								}
+							})
+							.catch(() => {
+								lyricsContent.innerHTML = '<div class="xp-player__lyrics-error">加载歌词失败</div>';
+							});
+					}
+				});
+
+				if (lyricsProgress) {
+					lyricsProgress.addEventListener("click", (event) => {
+						if (!audio.duration) return;
+						const rect = lyricsProgress.getBoundingClientRect();
+						const percent = Math.min(
+							Math.max((event.clientX - rect.left) / rect.width, 0),
+							1
+						);
+						audio.currentTime = percent * audio.duration;
+						if (audio.paused) {
+							audio.play();
+						}
+					});
+				}
+			}
+
+			const updateLyrics = () => {
+				if (parsedLyrics.length === 0 || !lyricsContent) return;
+				const currentTime = audio.currentTime;
+				const duration = audio.duration || 0;
+				
+				if (lyricsProgressBar && duration) {
+					const percent = (currentTime / duration) * 100;
+					lyricsProgressBar.style.width = `${percent}%`;
+					if (lyricsProgress) {
+						lyricsProgress.setAttribute("aria-valuenow", Math.round(percent));
+						lyricsProgress.setAttribute("aria-valuemax", 100);
+					}
+				}
+				
+				let newIndex = -1;
+
+				for (let i = parsedLyrics.length - 1; i >= 0; i--) {
+					if (currentTime >= parsedLyrics[i].time) {
+						newIndex = i;
+						break;
+					}
+				}
+
+				if (newIndex !== currentLyricIndex) {
+					currentLyricIndex = newIndex;
+					const lyricLines = lyricsContent.querySelectorAll(".xp-player__lyric-line");
+					lyricLines.forEach((line, index) => {
+						line.classList.remove("active", "passed");
+						if (index === currentLyricIndex) {
+							line.classList.add("active");
+							const scrollContainer = lyricsContainer.querySelector(".xp-player__lyrics-scroll");
+							if (scrollContainer) {
+								requestAnimationFrame(() => {
+									const containerRect = scrollContainer.getBoundingClientRect();
+									const lineRect = line.getBoundingClientRect();
+									const containerCenter = containerRect.top + containerRect.height / 2;
+									const lineCenter = lineRect.top + lineRect.height / 2;
+									const scrollOffset = lineCenter - containerCenter;
+									const currentScroll = scrollContainer.scrollTop;
+									const targetScroll = Math.max(0, currentScroll + scrollOffset);
+
+									scrollContainer.scrollTo({
+										top: targetScroll,
+										behavior: "smooth",
+									});
+								});
+							}
+						} else if (index < currentLyricIndex) {
+							line.classList.add("passed");
+						}
+					});
+				}
+			};
+
+			const pauseOthers = () => {
+				if (activeAudio && activeAudio !== audio) {
+					activeAudio.pause();
+				}
+				activeAudio = audio;
+			};
+
+			const syncState = () => {
+				const duration = audio.duration || 0;
+				const current = audio.currentTime || 0;
+				const percent = duration ? (current / duration) * 100 : 0;
+				bar.style.width = `${percent}%`;
+				currentEl && (currentEl.textContent = formatXPTime(current));
+				if (durationEl && duration && durationEl.textContent === "--:--") {
+					durationEl.textContent = formatXPTime(duration);
+				}
+				updateLyrics();
+			};
+
+			btn.addEventListener("click", () => {
+				if (audio.paused) {
+					pauseOthers();
+					audio.play();
+				} else {
+					audio.pause();
+				}
+			});
+
+			audio.addEventListener("play", () => {
+				icon.textContent = "❚❚";
+				btn.setAttribute("aria-pressed", "true");
+			});
+
+			audio.addEventListener("pause", () => {
+				icon.textContent = "▶";
+				btn.setAttribute("aria-pressed", "false");
+			});
+
+			audio.addEventListener("timeupdate", syncState);
+			audio.addEventListener("loadedmetadata", () => {
+				durationEl && (durationEl.textContent = formatXPTime(audio.duration));
+				syncState();
+			});
+			audio.addEventListener("ended", () => {
+				audio.currentTime = 0;
+				audio.pause();
+				syncState();
+			});
+
+			progress.addEventListener("click", (event) => {
+				if (!audio.duration) return;
+				const rect = progress.getBoundingClientRect();
+				const percent = Math.min(
+					Math.max((event.clientX - rect.left) / rect.width, 0),
+					1
+				);
+				audio.currentTime = percent * audio.duration;
+				syncState();
+			});
+		});
+	};
+
+	if (document.readyState === "loading") {
+		document.addEventListener("DOMContentLoaded", bootstrapPlayers, { once: true });
+	} else {
+		bootstrapPlayers();
+	}
+</script>
 </body>
 </html>
 
