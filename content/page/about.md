@@ -47,7 +47,7 @@ author: Hatsumi&Aoi
         <h3 class="card-title"><a class="text-decoration-none" href="/blog/me/hatsumi/">Hatsumi</a></h3>
         <p class="card-text">生活好無聊wwww(厭世宅女音)</p>
         <div class="card-text">
-          <a href="{{metadata.metasocial.telegram_Kirishima}}">telegram: @KirishimaMana</a>
+          telegram: <a href="{{metadata.metasocial.telegram_Kirishima}}">@KirishimaMana</a>
           &amp;
           <a href="mailto:{{metadata.author.email}}">Email me ✉</a>
         </div>
@@ -71,7 +71,7 @@ author: Hatsumi&Aoi
 
 <h1 class="link-section-title">友鏈 / Link</h1>
 <div class="link-stack">
-  <a href="https://kirish1ma.github.io/">一個奇怪的「後現代」網站(廢棄)</a>
+  <!-- <a href="https://kirish1ma.github.io/">一個奇怪的「後現代」網站(廢棄)</a> -->
   <a href="https://dontalk.org/">Dontalk - 緘默</a>
 </div>
 

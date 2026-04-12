@@ -8,11 +8,12 @@ favicon: /logos.png
 url: "https://0t63.github.io/"
 
 metasocial:
-  # - facebook: "https://www.facebook.com/"
-  # - twitteruser: "@username"
-  # - twitter: "https://x.com/user"
-  - github_Kirish1ma: "https://github.com/Kirish1ma"
-  - telegram_Kirishima: "https://t.me/KirishimaMana"
+  image: /logos.png
+  # facebook: "https://www.facebook.com/"
+  # twitteruser: "@username"
+  # twitter: "https://x.com/user"
+  github_Kirish1ma: "https://github.com/Kirish1ma"
+  telegram_Kirishima: "https://t.me/KirishimaMana"
 
 toc_widget_title: On This Page
 

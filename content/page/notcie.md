@@ -29,4 +29,4 @@ permalink: /notice/
 
 ## 聯絡方式
 
-<a href="mailto:mail.sycamore587@passinbox.com" style="text-decoration: underline;" >Contact me(mail.sycamore587@passinbox.com)</a>
+<a href="mailto:{{ metadata.author.email }}" style="text-decoration: underline;" >Contact me</a>
