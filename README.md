@@ -30,3 +30,14 @@
 ```
 
 使用 `link-section-title` 類別來設定標題，使用 `link-stack` 類別來包裝跳轉按鈕。
+
+## XPPlayer 音樂播放器
+<!-- 公共說明文件 -->
+<!-- {% include "partials/xpplayer-readme.njk" %} -->
+
+範例
+```html
+{% xpPlayer "/media/audio/檔案名.mp3", "檔案標題", "檔案作者", "/media/audio/檔案封面.jpg", "/media/audio/檔案歌詞.lrc" %}
+```
+
+使用 `xpPlayer` 類別來包裝音樂播放器，參數分別為音樂路徑、音樂名稱、音樂作者、音樂封面、音樂歌詞路徑。

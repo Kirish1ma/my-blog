@@ -15,6 +15,17 @@ import markdownItFootnote from "markdown-it-footnote";
 import markdownItAttrs from "markdown-it-attrs";
 import pluginTOC from "eleventy-plugin-toc";
 import CleanCSS from "clean-css";
+import xpPlayerConfig from "./_data/xpPlayer.js";
+
+const escapeHtml = (value = "") =>
+	String(value ?? "")
+		.replace(/&/g, "&amp;")
+		.replace(/</g, "&lt;")
+		.replace(/>/g, "&gt;")
+		.replace(/"/g, "&quot;")
+		.replace(/'/g, "&#39;");
+
+const escapeAttr = (value = "") => escapeHtml(value).replace(/`/g, "&#96;");
 
 export default async function (eleventyConfig) {
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
@@ -130,6 +141,65 @@ export default async function (eleventyConfig) {
 
 	eleventyConfig.addPlugin(pluginFilters);
 	eleventyConfig.addPlugin(IdAttributePlugin, {});
+
+	eleventyConfig.addShortcode("xpPlayer", (src, title = "", artist = "", cover = "", lrc = "") => {
+		if (!src) return "";
+		const safeSrc = escapeAttr(src);
+		const hasExplicitCover = Boolean(cover);
+		const hasLrc = Boolean(lrc);
+		const coverSrc = hasExplicitCover
+			? escapeAttr(cover)
+			: xpPlayerConfig.fallbackCover;
+		const coverMarkup = `<div class="xp-player__cover">
+			<img src="${coverSrc}" alt="${escapeAttr(title || "Audio cover")}" loading="lazy" data-cover-img>
+		</div>`;
+		const titleMarkup = title
+			? `<div class="xp-player__title" title="${escapeAttr(title)}">${escapeHtml(title)}</div>`
+			: "";
+		const artistMarkup = artist
+			? `<div class="xp-player__artist" title="${escapeAttr(artist)}">${escapeHtml(artist)}</div>`
+			: "";
+		const lrcToggleMarkup = hasLrc
+			? `<button type="button" class="xp-player__lrc-toggle" aria-label="${xpPlayerConfig.labels.showLyrics}" title="${xpPlayerConfig.labels.showLyrics}">
+				<span class="xp-player__lrc-icon">${xpPlayerConfig.icons.lyrics}</span>
+			</button>`
+			: "";
+		const lrcContainerMarkup = hasLrc
+			? `<div class="xp-player__lyrics" data-lrc-container>
+				<div class="xp-player__lyrics-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+					<div class="xp-player__lyrics-progress-bar"></div>
+				</div>
+				<div class="xp-player__lyrics-scroll">
+					<div class="xp-player__lyrics-content"></div>
+				</div>
+			</div>`
+			: "";
+		return `<div class="xp-player" data-xp-player data-cover-mode="${
+											hasExplicitCover ? "explicit" : "auto"
+								  }" data-fallback-cover="${xpPlayerConfig.fallbackCover}"${hasLrc ? ` data-lrc="${escapeAttr(lrc)}"` : ""}>
+			${coverMarkup}
+			<div class="xp-player__panel">
+				<button type="button" class="xp-player__btn" aria-label="${xpPlayerConfig.labels.playPause}">
+					<span class="xp-player__icon">${xpPlayerConfig.icons.play}</span>
+				</button>
+				<div class="xp-player__meta">
+					${titleMarkup}
+					${artistMarkup}
+				</div>
+				<div class="xp-player__time">
+					<span class="xp-player__current">${xpPlayerConfig.labels.currentTime}</span>
+					<span class="xp-player__divider">/</span>
+					<span class="xp-player__duration">${xpPlayerConfig.labels.duration}</span>
+				</div>
+				${lrcToggleMarkup}
+			</div>
+			<div class="xp-player__progress" role="slider" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="${xpPlayerConfig.labels.playProgress}">
+				<div class="xp-player__progress-bar"><span></span></div>
+			</div>
+			${lrcContainerMarkup}
+			<audio preload="none" src="${safeSrc}"></audio>
+		</div>`;
+	});
 
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return new Date().toISOString();
