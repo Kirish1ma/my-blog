@@ -1,0 +1,94 @@
+## {{ xpPlayer.readme.title }}
+
+### 基本用法
+
+在 Markdown 或 Nunjucks 模板中使用 `xpPlayer` shortcode：
+
+```markdown
+{{ xpPlayer.readme.exampleCode }}
+```
+
+### 參數說明
+
+| 參數 | 類型 | 必填 | 說明 |
+|------|------|------|------|
+{%- for param in xpPlayer.readme.parameters %}
+| `{{ param.name }}` | {{ param.type }} | {% if param.required %}✅{% else %}❌{% endif %} | {{ param.description }} |
+{%- endfor %}
+
+### 功能特性
+
+{%- for feature in xpPlayer.readme.features %}
+- **{{ feature.title }}**：{{ feature.description }}
+{%- endfor %}
+
+### 文件結構
+
+音樂文件應放在 `{{ xpPlayer.readme.fileStructure.path }}` 目錄下：
+
+```
+{{ xpPlayer.readme.fileStructure.path }}
+{%- for file in xpPlayer.readme.fileStructure.files %}
+├── {{ file.name }}              # {{ file.description }}
+{%- endfor %}
+```
+
+### LRC 歌詞格式
+
+{{ xpPlayer.readme.lrcFormat.description }}：
+
+```lrc
+{{ xpPlayer.readme.lrcFormat.example }}
+```
+
+時間格式為 `{{ xpPlayer.readme.lrcFormat.timeFormat }}`，其中：
+{%- for item in xpPlayer.readme.lrcFormat.timeFormatExplain %}
+- `{{ item.symbol }}` = {{ item.description }}
+{%- endfor %}
+
+### 配置自定義
+
+播放器的所有文本標籤和圖標都可通過 `_data/xpPlayer.js` 進行自定義：
+
+```javascript
+export default {
+	fallbackCover: "{{ xpPlayer.fallbackCover }}",
+	labels: {
+		playPause: "{{ xpPlayer.labels.playPause }}",
+		showLyrics: "{{ xpPlayer.labels.showLyrics }}",
+		currentTime: "{{ xpPlayer.labels.currentTime }}",
+		duration: "{{ xpPlayer.labels.duration }}",
+		playProgress: "{{ xpPlayer.labels.playProgress }}",
+	},
+	icons: {
+		play: "{{ xpPlayer.icons.play }}",
+		pause: "{{ xpPlayer.icons.pause }}",
+		lyrics: "{{ xpPlayer.icons.lyrics }}",
+	},
+};
+```
+
+修改此文件後，所有使用播放器的頁面都會自動更新。
+
+### 使用示例
+
+{%- for example in xpPlayer.readme.examples %}
+
+#### {{ example.title }}
+
+```markdown
+{{ example.code }}
+```
+{%- endfor %}
+
+### 樣式定制
+
+播放器的所有樣式都定義在 `_includes/styles/index.css` 中，以 `.xp-player` 開頭的 CSS 類：
+
+{%- for cssClass in xpPlayer.readme.cssClasses %}
+- `{{ cssClass.name }}` - {{ cssClass.description }}
+{%- endfor %}
+
+### 無障礙支持
+
+{{ xpPlayer.readme.accessibility }}
