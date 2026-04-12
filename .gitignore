@@ -4,3 +4,5 @@ package-lock.json
 .cache
 .obsidian
 Temple/
+.DS_Store
+*/.DS_Store
