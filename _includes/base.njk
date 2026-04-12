@@ -19,7 +19,6 @@
 {{content|safe}}
 </main>
 {% include "partials/footer.njk" %}
-<script src="https://cdn.jsdelivr.net/npm/jsmediatags@3.9.7/dist/jsmediatags.min.js"></script>
 <script type="module">
 	const xpPlayerConfig = {{ xpPlayer | dump | safe }};
 
@@ -46,6 +45,22 @@
 		return window.btoa(binary);
 	};
 
+	let jsMediaTagsPromise = null;
+	const loadJsMediaTags = () => {
+		if (jsMediaTagsPromise) return jsMediaTagsPromise;
+		if (window.jsmediatags) return Promise.resolve(window.jsmediatags);
+		
+		jsMediaTagsPromise = new Promise((resolve, reject) => {
+			const script = document.createElement('script');
+			script.src = 'https://cdn.jsdelivr.net/npm/jsmediatags@3.9.7/dist/jsmediatags.min.js';
+			script.onload = () => resolve(window.jsmediatags);
+			script.onerror = reject;
+			document.head.appendChild(script);
+		});
+		
+		return jsMediaTagsPromise;
+	};
+
 	const ensureCoverArtwork = (player, audio) => {
 		const coverImg = player.querySelector("[data-cover-img]");
 		if (!coverImg) return;
@@ -58,35 +73,39 @@
 			if (coverImg.src !== fallbackCover) {
 				setCover(fallbackCover);
 			}
-		});
+		}, { once: true });
 		if (coverMode !== "auto") {
 			if (!coverImg.getAttribute("src")) {
 				setCover(fallbackCover);
 			}
 			return;
 		}
-		const jsmediatags = window.jsmediatags;
-		if (!audio?.src || !jsmediatags) {
+		if (!audio?.src) {
 			setCover(fallbackCover);
 			return;
 		}
-		jsmediatags.read(audio.currentSrc || audio.src, {
-			onSuccess: ({ tags }) => {
-				const picture = tags?.picture;
-				if (picture?.data?.length) {
-					try {
-						const base64 = bytesToBase64(picture.data);
-						setCover(`data:${picture.format};base64,${base64}`);
-					} catch (error) {
-						console.warn("xpPlayer cover decode failed", error);
-						setCover(fallbackCover);
-					}
-				} else {
-					setCover(fallbackCover);
-				}
-			},
-			onError: () => setCover(fallbackCover),
-		});
+		
+		loadJsMediaTags()
+			.then((jsmediatags) => {
+				jsmediatags.read(audio.currentSrc || audio.src, {
+					onSuccess: ({ tags }) => {
+						const picture = tags?.picture;
+						if (picture?.data?.length) {
+							try {
+								const base64 = bytesToBase64(picture.data);
+								setCover(`data:${picture.format};base64,${base64}`);
+							} catch (error) {
+								console.warn("xpPlayer cover decode failed", error);
+								setCover(fallbackCover);
+							}
+						} else {
+							setCover(fallbackCover);
+						}
+					},
+					onError: () => setCover(fallbackCover),
+				});
+			})
+			.catch(() => setCover(fallbackCover));
 	};
 
 	const parseLRC = (lrcText) => {
