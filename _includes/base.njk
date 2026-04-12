@@ -21,6 +21,8 @@
 {% include "partials/footer.njk" %}
 <script src="https://cdn.jsdelivr.net/npm/jsmediatags@3.9.7/dist/jsmediatags.min.js"></script>
 <script type="module">
+	const xpPlayerConfig = {{ xpPlayer | dump | safe }};
+
 	const formatXPTime = (secs) => {
 		if (!Number.isFinite(secs)) return "--:--";
 		const minutes = Math.floor(secs / 60)
@@ -47,7 +49,7 @@
 	const ensureCoverArtwork = (player, audio) => {
 		const coverImg = player.querySelector("[data-cover-img]");
 		if (!coverImg) return;
-		const fallbackCover = player.dataset.fallbackCover || "/media/audio/no-album-art.png";
+		const fallbackCover = player.dataset.fallbackCover || xpPlayerConfig.fallbackCover;
 		const coverMode = player.dataset.coverMode || "explicit";
 		const setCover = (src) => {
 			coverImg.src = src || fallbackCover;
@@ -272,12 +274,12 @@
 			});
 
 			audio.addEventListener("play", () => {
-				icon.textContent = "❚❚";
+				icon.textContent = xpPlayerConfig.icons.pause;
 				btn.setAttribute("aria-pressed", "true");
 			});
 
 			audio.addEventListener("pause", () => {
-				icon.textContent = "▶";
+				icon.textContent = xpPlayerConfig.icons.play;
 				btn.setAttribute("aria-pressed", "false");
 			});
 
