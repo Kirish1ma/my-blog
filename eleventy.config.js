@@ -197,6 +197,7 @@ export default async function (eleventyConfig) {
 				<div class="xp-player__progress-bar"><span></span></div>
 			</div>
 			${lrcContainerMarkup}
+			<audio preload="metadata" src="${safeSrc}"></audio>
 			<audio preload="none" src="${safeSrc}"></audio>
 		</div>`;
 	});
