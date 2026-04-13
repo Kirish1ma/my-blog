@@ -37,7 +37,23 @@
 
 範例
 ```html
-{% xpPlayer "/media/audio/檔案名.mp3", "檔案標題", "檔案作者", "/media/audio/檔案封面.jpg", "/media/audio/檔案歌詞.lrc" %}
+{# 完全使用外部链接 #}
+{% xpPlayer 
+  "https://example.com/music/song.mp3", 
+  "歌曲名", 
+  "艺术家", 
+  "https://example.com/covers/album.jpg", 
+  "https://example.com/lyrics/song.lrc" 
+%}
+
+{# 混合使用（本地 + 外部） #}
+{% xpPlayer 
+  "https://cdn.example.com/audio/song.mp3", 
+  "歌曲名", 
+  "艺术家", 
+  "/media/audio/local-cover.jpg", 
+  "https://lrc-api.com/lyrics/123.lrc" 
+%}
 ```
 
 使用 `xpPlayer` 類別來包裝音樂播放器，參數分別為音樂路徑、音樂名稱、音樂作者、音樂封面、音樂歌詞路徑。
