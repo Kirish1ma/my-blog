@@ -198,6 +198,7 @@ export default async function (eleventyConfig) {
 			</div>
 			${lrcContainerMarkup}
 			<audio preload="metadata" src="${safeSrc}"></audio>
+			<audio preload="none" src="${safeSrc}"></audio>
 		</div>`;
 	});
 
