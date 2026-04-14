@@ -58,4 +58,13 @@ export default function (eleventyConfig) {
 			return typeof tag === "string" ? tag.replace(/^cat-/, "") : "";
 		},
 	);
+
+	eleventyConfig.addFilter(
+		"matrixDecrypt",
+		function matrixDecrypt(content, enabled = false, duration = 1500) {
+			if (!enabled) return content;
+			const duration_attr = parseInt(duration, 10) || 1500;
+			return `<div data-matrix-decrypt="true" data-matrix-duration="${duration_attr}">${content}</div>`;
+		},
+	);
 }
