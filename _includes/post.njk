@@ -7,8 +7,8 @@ layout: base.njk
 <div class="row">
 <div class="col-md-7 p-3 p-md-5 mx-auto">
 <header class="text-center mb-5">
-<h1 class="display-4 header-title">{{title}}</h1>
-<h2 class="lead">{{description}}</h2>
+<h1 class="display-4 header-title" {% if matrixDecrypt %}data-matrix-decrypt="true" data-matrix-duration="{{ matrixDuration or 2500 }}"{% endif %}>{{title}}</h1>
+<h2 class="lead" {% if matrixDecrypt %}data-matrix-decrypt="true" data-matrix-duration="{{ matrixDuration or 2500 }}"{% endif %}>{{description}}</h2>
 {# ai #}
 {% if author is defined %}
 {% set displayAuthor = (author or "") | trim %}
@@ -16,7 +16,7 @@ layout: base.njk
 {% set displayAuthor = metadata.author.name %}
 {% endif %}
 {% if displayAuthor %}
-<p>By <a href="{{metadata.author.url}}">{{ displayAuthor }}</a> <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>{% endif %}
+<p>By <a href="{{metadata.author.url}}" {% if matrixDecrypt %}data-matrix-decrypt="true" data-matrix-duration="{{ matrixDuration or 1500 }}"{% endif %}>{{ displayAuthor }}</a> <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>{% endif %}
 {# ai #}
 {% set categories = tags | filterCategoryList %}
 {% if categories | length %}
@@ -24,7 +24,7 @@ layout: base.njk
 {% endif %}
 <p class="small mb-5"><small>{%- for tag in tags | filterTagList %}{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}<a href="{{ tagUrl }}">{{ tag }}</a>{%- if not loop.last %}, {% endif %} {% endfor %}</small></p>
 </header>
-<article class="mb-5">
+<article class="mb-5" {% if matrixDecrypt %}data-matrix-decrypt-container="true" data-matrix-duration="{{ matrixDuration or 2500 }}"{% endif %}>
 {% if show_toc %}<h3>{{metadata.toc_widget_title}}</h3>{{ content | toc | safe }}{% endif %}
 {{content|safe}}
 </article>
