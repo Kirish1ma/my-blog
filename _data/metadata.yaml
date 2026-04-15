@@ -5,7 +5,7 @@ locale: en_US
 image: /logos.png
 favicon: /logos.png
 #url: "http://localhost:8080"
-url: "https://0t63.github.io/"
+url: "https://blog.kirishima.dev"
 
 metasocial:
   image: /logos.png
@@ -33,7 +33,7 @@ navbar:
 
 download:
   text: RSS
-  url: https://0t63.github.io/feed/feed.xml
+  url: https://blog.kirishima.dev/feed/feed.xml
   # url: https://example.com/feed/feed.xml
 
 footer:

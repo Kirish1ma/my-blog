@@ -80,6 +80,6 @@ author: Hatsumi&Aoi
 	<img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Feed-icon.svg" alt="RSS Icon" width="28" height="28">
 	<div>
 		<strong>訂閱本站 RSS</strong>
-		<a class="rss-link" href="https://0t63.github.io/feed/feed.xml">https://0t63.github.io/feed/feed.xml</a>
+		<a class="rss-link" href="https://blog.kirishima.dev/feed/feed.xml">https://blog.kirishima.dev/feed/feed.xml</a>
 	</div>
 </div>

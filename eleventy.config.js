@@ -132,7 +132,7 @@ export default async function (eleventyConfig) {
 			language: "zh-cn",
 			title: "Hatsumi's Blog",
 			subtitle: "Just record someting",
-			base: "https://0t63.github.io/",
+			base: "https://blog.kirishima.dev",
 			author: {
 				name: "Hatsumi",
 			},
@@ -142,30 +142,32 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginFilters);
 	eleventyConfig.addPlugin(IdAttributePlugin, {});
 
-	eleventyConfig.addShortcode("xpPlayer", (src, title = "", artist = "", cover = "", lrc = "") => {
-		if (!src) return "";
-		const safeSrc = escapeAttr(src);
-		const hasExplicitCover = Boolean(cover);
-		const hasLrc = Boolean(lrc);
-		const coverSrc = hasExplicitCover
-			? escapeAttr(cover)
-			: xpPlayerConfig.fallbackCover;
-		const coverMarkup = `<div class="xp-player__cover">
+	eleventyConfig.addShortcode(
+		"xpPlayer",
+		(src, title = "", artist = "", cover = "", lrc = "") => {
+			if (!src) return "";
+			const safeSrc = escapeAttr(src);
+			const hasExplicitCover = Boolean(cover);
+			const hasLrc = Boolean(lrc);
+			const coverSrc = hasExplicitCover
+				? escapeAttr(cover)
+				: xpPlayerConfig.fallbackCover;
+			const coverMarkup = `<div class="xp-player__cover">
 			<img src="${coverSrc}" alt="${escapeAttr(title || "Audio cover")}" loading="lazy" data-cover-img>
 		</div>`;
-		const titleMarkup = title
-			? `<div class="xp-player__title" title="${escapeAttr(title)}">${escapeHtml(title)}</div>`
-			: "";
-		const artistMarkup = artist
-			? `<div class="xp-player__artist" title="${escapeAttr(artist)}">${escapeHtml(artist)}</div>`
-			: "";
-		const lrcToggleMarkup = hasLrc
-			? `<button type="button" class="xp-player__lrc-toggle" aria-label="${xpPlayerConfig.labels.showLyrics}" title="${xpPlayerConfig.labels.showLyrics}">
+			const titleMarkup = title
+				? `<div class="xp-player__title" title="${escapeAttr(title)}">${escapeHtml(title)}</div>`
+				: "";
+			const artistMarkup = artist
+				? `<div class="xp-player__artist" title="${escapeAttr(artist)}">${escapeHtml(artist)}</div>`
+				: "";
+			const lrcToggleMarkup = hasLrc
+				? `<button type="button" class="xp-player__lrc-toggle" aria-label="${xpPlayerConfig.labels.showLyrics}" title="${xpPlayerConfig.labels.showLyrics}">
 				<span class="xp-player__lrc-icon">${xpPlayerConfig.icons.lyrics}</span>
 			</button>`
-			: "";
-		const lrcContainerMarkup = hasLrc
-			? `<div class="xp-player__lyrics" data-lrc-container>
+				: "";
+			const lrcContainerMarkup = hasLrc
+				? `<div class="xp-player__lyrics" data-lrc-container>
 				<div class="xp-player__lyrics-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
 					<div class="xp-player__lyrics-progress-bar"></div>
 				</div>
@@ -173,10 +175,10 @@ export default async function (eleventyConfig) {
 					<div class="xp-player__lyrics-content"></div>
 				</div>
 			</div>`
-			: "";
-		return `<div class="xp-player" data-xp-player data-cover-mode="${
-											hasExplicitCover ? "explicit" : "auto"
-								  }" data-fallback-cover="${xpPlayerConfig.fallbackCover}"${hasLrc ? ` data-lrc="${escapeAttr(lrc)}"` : ""}>
+				: "";
+			return `<div class="xp-player" data-xp-player data-cover-mode="${
+				hasExplicitCover ? "explicit" : "auto"
+			}" data-fallback-cover="${xpPlayerConfig.fallbackCover}"${hasLrc ? ` data-lrc="${escapeAttr(lrc)}"` : ""}>
 			${coverMarkup}
 			<div class="xp-player__panel">
 				<button type="button" class="xp-player__btn" aria-label="${xpPlayerConfig.labels.playPause}">
@@ -200,7 +202,8 @@ export default async function (eleventyConfig) {
 			<audio preload="metadata" src="${safeSrc}"></audio>
 			<audio preload="none" src="${safeSrc}"></audio>
 		</div>`;
-	});
+		},
+	);
 
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return new Date().toISOString();
