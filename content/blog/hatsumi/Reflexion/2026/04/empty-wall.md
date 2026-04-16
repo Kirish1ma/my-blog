@@ -1,5 +1,5 @@
 ---
-title: It's just looks like an empty wall.
+title: It just looks like an empty wall.
 author: Hatsumi
 date: 2026-04-16
 description: 論清醒之責 | On Being Responsible for Awareness
