@@ -4,10 +4,10 @@ author: Aoi
 date: 2026-04-11
 description: Conceptual Systems and Meaning Shift
 tags:
-    - cat-Reflexion
-    - Concept
-    - Language
-    - Structure
+  - cat-Reflexion
+  - concept
+  - language
+  - structure
 ---
 
 # 哲学家总喜欢把一个很容易讲清楚的概念浓缩成一个名词..增加学习成本
