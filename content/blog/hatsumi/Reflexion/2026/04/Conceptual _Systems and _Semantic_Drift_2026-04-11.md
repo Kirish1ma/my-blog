@@ -5,9 +5,10 @@ date: 2026-04-11
 description: Conceptual Systems and Semantic Drift
 tags:
   - cat-Reflexion
-  - Concept
-  - Language
-  - Structure
+  - concept
+  - language
+  - structure
+  - semantic-drift
 ---
 
 哲学家总喜欢把一个很容易讲清楚的概念浓缩成一个名词.增加学习成本www.解釋一個名詞需要更多名詞.我能理解,這是在体系化表达,很多哲学家写作时并不是在解释一个孤立概念,而是在搭建一整套结构.如果只用普通语言表达,结构很难保持稳定.某種意義上,也能作爲立場劃分.畢竟當一個概念被命名后,它就變成了一個"工具"必要時甚至會變成"武器".通過對概念的理解也能被用於立場過濾.只有你瞭解過才能加入討論..
