@@ -4,7 +4,10 @@ author: Hatsumi
 date: 2026-02-05
 description: 論清醒之責 | On Being Responsible for Awareness
 tags:
-    - cat-Reflexion
+  - cat-Reflexion
+  - death
+  - nihilism
+  - reconciliation
 ---
 
 <!--

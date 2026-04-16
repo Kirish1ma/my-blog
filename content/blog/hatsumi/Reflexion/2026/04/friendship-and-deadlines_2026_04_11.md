@@ -4,9 +4,10 @@ author: Hatsumi
 date: 2026-04-11
 description: 爲什麽有些時候人們會因爲和朋友的關係很好而暫時放下事,有些時候卻會因爲關係很好而暫時放下朋友去忙一些其他事務呢(這種事好像大部分即時性較强)
 tags:
-  - cat-Vignettes
-  - Friendship
-  - Time-window
+  - cat-Reflexion
+  - friendship
+  - deadlines
+  - time-window
 ---
 
 如果真的想想.其實很容易得出一個局部結論.人在處理情景時關係的親密程度確實是一個變量.但是這個變量並不是固定不變的.人們在決定"先陪朋友"還是先處理事務"時,通常會同時考慮多個因素,性質的成本.
