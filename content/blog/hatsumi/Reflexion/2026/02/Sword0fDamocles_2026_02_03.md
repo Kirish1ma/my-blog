@@ -9,6 +9,8 @@ tags:
   - existential-anxiety
   - nihilism
   - narrative
+  - social-narrative
+  - interpretation
 ---
 
 <!--

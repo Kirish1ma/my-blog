@@ -8,6 +8,7 @@ tags:
   - death
   - nihilism
   - reconciliation
+  - existentialism
 ---
 
 <!--

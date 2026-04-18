@@ -9,6 +9,7 @@ tags:
   - personal-identity
   - memory
   - continuity
+  - narrative
 ---
 
 <!--

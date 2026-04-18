@@ -8,6 +8,7 @@ tags:
   - technology
   - survival
   - progress
+  - systems
 ---
 
 <!--2026-04-05

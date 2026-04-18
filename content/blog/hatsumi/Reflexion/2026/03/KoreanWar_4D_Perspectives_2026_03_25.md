@@ -9,6 +9,8 @@ tags:
   - perspective
   - subjectivity
   - narrative
+  - social-narrative
+  - interpretation
 ---
 
 <!--

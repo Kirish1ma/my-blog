@@ -10,6 +10,10 @@ tags:
   - meaning
   - awareness
   - existentialism
+  - underdetermination
+  - interpretation
+  - social-narrative
+  - narrative
 ---
 
 一个系统能引发哲学思考,不等于它在设计上就是优秀的哲学作品.有时只是因为它太贫瘠,迫使你去补意义.就像看着一堵空墙,你开始思考存在主义,但这不代表墙是加缪设计的.
