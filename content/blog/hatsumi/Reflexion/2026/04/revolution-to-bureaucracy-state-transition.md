@@ -1,5 +1,5 @@
 ---
-title: 革命之后政权如何走向官僚化?
+title: 革命之後政權如何走向官僚化?
 author: Hatsumi
 date: 2026-04-19
 description: 相比革命性政權,官僚型政權的形成機制相對似乎并不明瞭
