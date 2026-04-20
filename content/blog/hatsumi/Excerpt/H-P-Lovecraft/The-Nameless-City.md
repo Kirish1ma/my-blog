@@ -7,9 +7,13 @@ tags:
   - cat-excerpt
 ---
 
+> _Special Statement: This reposted work is excluded from the CC BY-NC-SA 4.0 license stated in this blog’s footer. All rights in the original work remain with the original copyright holder._  
+> _特別說明:本文為轉載作品,不適用本站頁腳所聲明的 CC BY-NC-SA 4.0 知識共享協議,原文相關權利歸原版權方所有._  
+> _如版權方認為本文內容構成侵權,請聯絡本站,將第一時間處理._
+
 <div class="img-photo">
 	<img src="https://dontalk.org/api/media/76" alt="洛夫克拉夫特手写修订的打字稿" loading="lazy">
-	<p class="img-photo__caption">夫克拉夫特手写修订的打字稿</p>
+	<p class="img-photo__caption">洛夫克拉夫特手写修订的打字稿</p>
 </div>
 
 有洛夫克拉夫特手写修订的打字稿。“……冒着无聊的风险，附上我最新的——刚完成的、打字版的——《无名之城》”。（参见1921年1月26日洛夫克拉夫特写给法兰克·贝尔纳普·隆恩的信件）
