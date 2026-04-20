@@ -8,7 +8,7 @@ tags:
 ---
 
 > _Special Statement: This reposted work is excluded from the CC BY-NC-SA 4.0 license stated in this blog’s footer. All rights in the original work remain with the original copyright holder._  
-> _特別說明:本文為轉載作品,不適用本站頁腳所聲明的 CC BY-NC-SA 4.0 知識共享協議,原文相關權利歸原版權方所有._  
+> _特別說明:本文為轉載作品,不適用本站頁腳所聲明的 CC BY-NC-SA 4.0 知識共享協議,原文/圖像相關權利歸原版權方所有._  
 > _如版權方認為本文內容構成侵權,請聯絡本站,將第一時間處理._
 
 <div class="img-photo">
@@ -67,7 +67,7 @@ tags:
 
 <div class="img-photo">
 	<img src="https://dontalk.org/api/media/77" alt="Eldritch Tales;The Nameless City" loading="lazy">
-	<p class="Eldritch Tales;The Nameless City <a href="https://lesedwards.com/products/eldritch-tales-the-nameless-city" target="_blank">© Les Edwards 2010, All Rights Reserved</a></p>
+	<p class="img-photo__caption">Eldritch Tales;The Nameless City <a href="https://lesedwards.com/products/eldritch-tales-the-nameless-city" target="_blank">© Les Edwards 2010, All Rights Reserved</a></p>
 </div>
 
 想要把这种怪诞畸形的东西描述出来是不可能的。它们像是一类爬行动物，身体的轮廓与线条会让人想起鳄鱼，有时又像是海豹，但更多的是即使那些生物学家和古生物学家也闻所未闻、见所未见的样子。它们大小如同一个瘦小的人类，前肢上明显长有精巧的脚掌，但它们的形状很奇怪，类似人类的手掌和手指。最奇怪的还是它们的头部，呈现出的样子完全违反了任何生物学的原则。有那一瞬，我想用已知的动物与其作比较，猫、斗牛犬、传说中的萨堤尔又或者是人类，但没有任何东西可以拿来与之相比。即便是主神朱庇特都没有像它们这么异常巨大和凸起的前额，它们脸上没有鼻子，头生犄角，还长着短吻鳄一般的下颚，这些特征使它们明显不属于任何已知的物种。我不禁开始怀疑这些木乃伊的真实性，甚至假设它们是一种人造的圣像。但是，很快我就推翻了自己的这种假设，并且确定它们确实是某种古生物，是这座无名之城尚且生机盎然时曾经存在的一个物种。似是为了突出怪诞可笑的外形，它们大多被穿上了华美又价格不菲的纤维织物，并且戴满了黄金饰品、珠宝，还有未知的发光金属。
