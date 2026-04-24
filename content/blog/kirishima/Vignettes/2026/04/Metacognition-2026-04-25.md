@@ -10,6 +10,11 @@ tags:
   - metacognition
 ---
 
+<div class="img-photo">
+	<img src="https://i.postimg.cc/wxyCNRgm/Charlie-Chaplin.jpg" alt="Charlie Chaplin" loading="lazy">
+	<p class="img-photo__caption">Charlie Chaplin</p>
+</div>
+
 我不是真的想死,只是死亡是大腦認爲的停止思考最直觀,最輕鬆的方式,我現在很冷靜,我知道這可能只是解離情緒.我也能理解外界可能認爲我會突然衝動做事.我也理解我可能會這樣.但我正在解構這種情緒.我知道我只是太累了需要休息
 
 我很冷靜,我知道我現在的樣子可能很讓人感到不安,不過只是沒辦法的事.我現在剛吃完藥.我可以説我現在沒有任何情緒,他們都被藥物壓下去了.但我實際上并不知道怎麽繼續思考下去,或者想些什麽
