@@ -1,5 +1,5 @@
 ---
-title: 元認知（Metacognition）
+title: 元認知
 author: Kirishima
 date: 2026-04-25
 description:
@@ -9,6 +9,11 @@ tags:
   - death
   - metacognition
 ---
+
+<div class="img-photo">
+	<img src="https://commons.wikimedia.org/wiki/File:Charlie_Chaplin.jpg#/media/File:Charlie_Chaplin.jpg" alt="Charlie Chaplin" loading="lazy">
+	<p class="img-photo__caption">Charlie Chaplin</p>
+</div>
 
 我不是真的想死,只是死亡是大腦認爲的停止思考最直觀,最輕鬆的方式,我現在很冷靜,我知道這可能只是解離情緒.我也能理解外界可能認爲我會突然衝動做事.我也理解我可能會這樣.但我正在解構這種情緒.我知道我只是太累了需要休息
 
