@@ -1,4 +1,4 @@
-title: "Hatsumi's Blog"
+title: "Kirishima's Blog"
 description: "Just Blog"
 language: "zh-cn"
 locale: en_US
@@ -46,7 +46,7 @@ license:
   url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 author:
-  name: "Hatsumi"
+  name: "Kirishima"
   email: "mail.sycamore587@passinbox.com"
   homepage: "https://meursault.dev/"
   url: "/about/"

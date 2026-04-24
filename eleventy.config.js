@@ -130,11 +130,11 @@ export default async function (eleventyConfig) {
 		},
 		metadata: {
 			language: "zh-cn",
-			title: "Hatsumi's Blog",
+			title: "Kirishima's Blog",
 			subtitle: "Just record someting",
 			base: "https://blog.kirishima.dev",
 			author: {
-				name: "Hatsumi",
+				name: "Kirishima",
 			},
 		},
 	});

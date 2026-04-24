@@ -2,19 +2,19 @@
 title: On Being Responsible for Awareness
 description: 論清醒之責
 permalink: /about/
-author: Hatsumi&Aoi
+author: Kirishima&Aoi
 ---
 
 # 公開聲明
 
-本博客由 Hatsumi&Aoi 共同維護,默認采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed) 協議.
+本博客由 Kirishima&Aoi 共同維護,默認采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed) 協議.
 但若內容涉及政治,宗教,翻譯學習作品等敏感話題,則屬於未授權内容,請勿轉載.參見 [[未授權内容聲明]](/notice/).將會在文章中醒目,具體的說明.
 
 ---
 
 # About Me
 
-## Contact Hatsumi_sama
+## Contact Kirishima_sama
 
 <!-- modify this form HTML and place wherever you want your form -->
 <form
@@ -44,7 +44,7 @@ author: Hatsumi&Aoi
   <div class="col-12 col-md-6">
     <div class="card h-100">
       <div class="card-body">
-        <h3 class="card-title"><a class="text-decoration-none" href="/blog/me/hatsumi/">Hatsumi</a></h3>
+        <h3 class="card-title"><a class="text-decoration-none" href="/blog/me/kirishima/">Kirishima</a></h3>
         <p class="card-text">生活好無聊wwww(厭世宅女音)</p>
         <div class="card-text">
           telegram: <a href="{{metadata.metasocial.telegram_Kirishima}}">@KirishimaMana</a>
