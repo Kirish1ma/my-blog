@@ -4,7 +4,7 @@ author: Kirishima
 date: 2026-04-11
 description: 爲什麽有些時候人們會因爲和朋友的關係很好而暫時放下事,有些時候卻會因爲關係很好而暫時放下朋友去忙一些其他事務呢(這種事好像大部分即時性較强)
 tags:
-  - cat-Reflexion
+  - cat-Vignettes
   - friendship
   - deadlines
   - time-window

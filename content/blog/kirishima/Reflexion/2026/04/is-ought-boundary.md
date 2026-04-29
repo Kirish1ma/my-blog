@@ -4,7 +4,7 @@ author: Kirishima
 date: 2026-04-14
 description: 是否应该严格区分"我们能知道什么"和"我们应该如何生活",亦或者,我们应该严格界定哲学辩论的界限么? | Should We Strictly Distinguish Between What We Can Know and How We Should Live?
 matrixDecrypt: true
-matrixDuration: 100
+matrixDuration: 500
 tags:
   - cat-Reflexion
   - epistemology

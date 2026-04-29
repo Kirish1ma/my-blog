@@ -4,11 +4,11 @@ author: Kirishima
 date: 2026-04-05
 description: 論清醒之責 | On Being Responsible for Awareness
 tags:
-  - cat-Reflexion
-  - technology
-  - survival
-  - progress
-  - systems
+  - cat-Vignettes
+    - technology
+    - survival
+    - progress
+    - systems
 ---
 
 <!--2026-04-05
