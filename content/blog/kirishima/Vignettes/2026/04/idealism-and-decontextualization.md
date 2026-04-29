@@ -5,6 +5,10 @@ date: 2026-04-29
 description:
 tags:
   - cat-Vignettes
+  - narrative
+  - interpretation
+  - social-narrative
+  - meaning
 ---
 
 天氣一冷我總是想到小時候看過的一本書中的劇情,苦兒流浪記中衛塔里斯摟著雷米死在暴風雪的那個晚上,印象裡對那時的描寫很深."雖然還是很冷,但至少沒有冷風呼嘯了"
