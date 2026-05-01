@@ -1,5 +1,5 @@
 ---
-title: 對之前的理想主義結局去結構化的輕度批判
+title: 對之前的理想主義結局去結構傾向的想法
 author: Kirishima
 date: 2026-04-29
 description:
