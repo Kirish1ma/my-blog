@@ -2,13 +2,13 @@ title: "Kirishima's Blog"
 description: "Just Blog"
 language: "zh-cn"
 locale: en_US
-image: /logos.png
-favicon: /logos.png
+image: /logos.svg
+favicon: /logos.svg
 #url: "http://localhost:8080"
 url: "https://blog.kirishima.dev"
 
 metasocial:
-  image: /logos.png
+  image: /logos.svg
   # facebook: "https://www.facebook.com/"
   # twitteruser: "@username"
   # twitter: "https://x.com/user"
