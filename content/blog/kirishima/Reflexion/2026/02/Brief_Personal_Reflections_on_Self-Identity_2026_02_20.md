@@ -2,7 +2,7 @@
 title: 有關自我同一性的簡短個人想法
 author: Kirishima
 date: 2026-02-20
-description: 論清醒之責 | On Being Responsible for Awareness
+description:
 tags:
   - cat-Reflexion
   - identity

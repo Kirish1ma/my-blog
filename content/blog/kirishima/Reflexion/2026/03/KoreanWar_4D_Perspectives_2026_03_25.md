@@ -2,7 +2,7 @@
 title: 多重视角下的历史与主体性的延申(乱起的名字)
 author: Kirishima
 date: 2026-03-25
-description: 論清醒之責 | On Being Responsible for Awareness
+description:
 tags:
   - cat-Reflexion
   - history
