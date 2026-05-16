@@ -1,7 +1,7 @@
 ---
 title: Krishima的隨手日記
 author: Kirishima
-date: 2026-05-10
+date: 2026-05-16
 description: 一些短到不值得單獨開一篇文章的内容.每次更新會自動置頂到新文章發佈
 tags:
   - cat-Vignettes
