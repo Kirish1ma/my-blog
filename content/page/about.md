@@ -1,13 +1,13 @@
 ---
-title: On Being Responsible for Awareness
-description: 論清醒之責
+title:
+description:
 permalink: /about/
-author: Kirishima&Aoi
+author: Kirishima
 ---
 
 # 公開聲明
 
-本博客由 Kirishima&Aoi 共同維護,默認采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed) 協議.
+本博客由 Kirishima& 維護,默認采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed) 協議.
 但若內容涉及政治,宗教,翻譯學習作品等敏感話題,則屬於未授權内容,請勿轉載.參見 [[未授權内容聲明]](/notice/).將會在文章中醒目,具體的說明.
 
 ---
@@ -54,7 +54,7 @@ author: Kirishima&Aoi
       </div>
     </div>
   </div>
-  <div class="col-12 col-md-6">
+  <!-- <div class="col-12 col-md-6">
     <div class="card h-100">
       <div class="card-body">
         <h3 class="card-title"><a class="text-decoration-none" href="/blog/me/aoi/">Aoi</a></h3>
@@ -62,7 +62,7 @@ author: Kirishima&Aoi
         <div class="card-text"></div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 ---
@@ -72,7 +72,7 @@ author: Kirishima&Aoi
 <h1 class="link-section-title">友鏈 / Link</h1>
 <div class="link-stack">
   <!-- <a href="https://kirish1ma.github.io/">一個奇怪的「後現代」網站(廢棄)</a> -->
-  <a href="https://dontalk.org/">Dontalk - 緘默</a>
+  <!-- <a href="https://dontalk.org/">Dontalk - 緘默</a> -->
 </div>
 
 <h1 class="rss-title">RSS 訂閱</h1>
